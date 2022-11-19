@@ -144,7 +144,7 @@ div:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000100:
           storage:
@@ -165,7 +165,7 @@ div:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000101:
           storage:
@@ -176,7 +176,7 @@ div:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000102:
           storage:
@@ -187,7 +187,7 @@ div:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000105:
           storage:
@@ -198,7 +198,7 @@ div:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000107:
           storage:

@@ -23,7 +23,7 @@
 	    "sealEngine" : "NoProof",
         "expect" : [
 	        {
-                "network" : [">=Istanbul"],
+                "network" : [">=ETC_Phoenix"],
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "balance" : "33000",
@@ -46,9 +46,9 @@
                 "transactions" : [
                      {
                         "expectException" : {
-                            "Istanbul" : "TR_IntrinsicGas",
-                            "Berlin" : "TR_IntrinsicGas",
-                            ">=London" : "TR_FeeCapLessThanBlocks"
+                            "ETC_Phoenix" : "TR_IntrinsicGas",
+                            "ETC_Magneto" : "TR_IntrinsicGas",
+                            ">=ETC_Mystique" : "TR_FeeCapLessThanBlocks"
                         },
                         "data" : "",
                         "gasLimit" : "12",
@@ -60,7 +60,7 @@
                     },
                     {
                         "expectException" : {
-                            ">=Istanbul" : "TR_IntrinsicGas"
+                            ">=ETC_Phoenix" : "TR_IntrinsicGas"
                         },
                         "data" : "",
                         "gasLimit" : "12",

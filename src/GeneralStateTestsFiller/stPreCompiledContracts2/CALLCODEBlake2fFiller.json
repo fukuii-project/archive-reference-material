@@ -15,7 +15,7 @@
           "gas": 0,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {}
@@ -29,7 +29,7 @@
           "gas": [1, 2, 3],
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {}
@@ -45,7 +45,7 @@
           "gas": 0,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {}
@@ -58,7 +58,7 @@
           "gas": -1,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -75,7 +75,7 @@
           "gas": -1,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -92,7 +92,7 @@
           "gas": -1,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -109,7 +109,7 @@
           "gas": -1,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -126,7 +126,7 @@
           "gas": -1,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -143,7 +143,7 @@
           "gas": 0,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {
@@ -160,7 +160,7 @@
           "gas": 0,
           "value": -1
         },
-        "network": [">=Istanbul"],
+        "network": [">=ETC_Phoenix"],
         "result": {
           "1000000000000000000000000000000000000000": {
             "storage": {}

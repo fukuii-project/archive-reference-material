@@ -285,7 +285,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000100:
           storage:
@@ -322,7 +322,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000102:
           storage:
@@ -336,7 +336,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000103:
           storage:
@@ -351,7 +351,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000104:
           storage:
@@ -366,7 +366,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000105:
           storage:
@@ -382,7 +382,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000107:
           storage:
@@ -396,7 +396,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000108:
           storage:
@@ -411,7 +411,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010a:
           storage:
@@ -424,7 +424,7 @@ mulmod:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010e:
           storage:

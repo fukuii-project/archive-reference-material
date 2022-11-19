@@ -284,7 +284,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000100:
           storage:
@@ -311,7 +311,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000101:
           storage:
@@ -338,7 +338,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000102:
           storage:
@@ -365,7 +365,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000103:
           storage:
@@ -393,7 +393,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000104:
           storage:
@@ -420,7 +420,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000105:
           storage:
@@ -447,7 +447,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000106:
           storage:
@@ -474,7 +474,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000107:
           storage:
@@ -502,7 +502,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000108:
           storage:
@@ -529,7 +529,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000109:
           storage:
@@ -556,7 +556,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010A:
           storage:
@@ -583,7 +583,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010B:
           storage:
@@ -611,7 +611,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010C:
           storage:
@@ -638,7 +638,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010D:
           storage:
@@ -665,7 +665,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010E:
           storage:
@@ -692,7 +692,7 @@ swap:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         000000000000000000000000000000000000010F:
           storage:

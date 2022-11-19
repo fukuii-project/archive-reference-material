@@ -1,19 +1,19 @@
 {
     "TRANSCT_svalue_Prefixed0000": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             }

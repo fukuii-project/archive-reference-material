@@ -16,7 +16,7 @@ delegatecall09Undefined:
     - indexes:
         data: !!int -1
       network:
-        - ConstantinopleFix
+        - ETC_Agharta
       result:
         0000000000000000000000000000000000000009:
           shouldnotexist: 1
@@ -26,7 +26,7 @@ delegatecall09Undefined:
     - indexes:
         data: !!int -1
       network:
-        - ">=Istanbul"
+        - ">=ETC_Phoenix"
       result:
         0000000000000000000000000000000000000009:
           shouldnotexist: 1

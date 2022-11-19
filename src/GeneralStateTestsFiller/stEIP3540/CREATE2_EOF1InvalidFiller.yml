@@ -287,7 +287,7 @@ CREATE2_EOF1Invalid:
   expect:
     - indexes: {}
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -299,7 +299,7 @@ CREATE2_EOF1Invalid:
     # Same expectation, but for London execution fails on EF byte, for 3540 it fails because EOF initcode or code is invalid
     - indexes: {}
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1

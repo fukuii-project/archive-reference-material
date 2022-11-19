@@ -20,7 +20,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	    {
-		    "network" : [">=Istanbul"],
+		    "network" : [">=ETC_Phoenix"],
 		    "result" : {
 			    "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                     "nonce" : "6"
@@ -102,7 +102,7 @@
                     },
                     {
                         "expectException" : {
-                            ">=Istanbul" : "TR_GasLimitReached"
+                            ">=ETC_Phoenix" : "TR_GasLimitReached"
                         },
                         "data" : "",
                         "gasLimit" : "21000",

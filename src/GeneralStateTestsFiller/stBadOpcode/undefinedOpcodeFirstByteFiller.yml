@@ -1345,7 +1345,7 @@ undefinedOpcodeFirstByte:
        gas: !!int -1
        value: !!int -1
       network:
-        - 'Berlin'
+        - 'ETC_Magneto'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -1411,7 +1411,7 @@ undefinedOpcodeFirstByte:
        gas: !!int -1
        value: !!int -1
       network:
-        - '>=London'
+        - '>=ETC_Mystique'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -1433,7 +1433,7 @@ undefinedOpcodeFirstByte:
             '0x45': 1 # GASLIMIT
             '0x46': 1 # CHAINID
             '0x47': 1 # SELFBALANCE
-            '0x48': 1 # BASEFEE
+            '0x48': 0 # BASEFEE
             '0x58': 1 # PC
             '0x59': 1 # MSIZE
             '0x5A': 1 # GAS

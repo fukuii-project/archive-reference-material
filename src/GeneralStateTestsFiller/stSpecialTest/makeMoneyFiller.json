@@ -11,7 +11,7 @@
         "expect" : [
     	    {
                 "indexes" : { "data" : -1, "gas" : -1, "value" : -1 },
-                "network" : ["Istanbul"],
+                "network" : ["ETC_Phoenix"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "999999999999999987"
@@ -26,7 +26,7 @@
             },
     	    {
                 "indexes" : { "data" : -1, "gas" : -1, "value" : -1 },
-                "network" : ["Berlin"],
+                "network" : ["ETC_Magneto"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "999999999999999987"
@@ -41,7 +41,7 @@
             },
     	    {
                 "indexes" : { "data" : -1, "gas" : -1, "value" : -1 },
-                "network" : [">=London"],
+                "network" : [">=ETC_Mystique"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "999999999999999987"

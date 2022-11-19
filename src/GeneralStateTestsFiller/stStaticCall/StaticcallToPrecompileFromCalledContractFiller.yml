@@ -17,7 +17,7 @@ StaticcallToPrecompileFromCalledContract:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       b000000000000000000000000000000000000000:
         storage:

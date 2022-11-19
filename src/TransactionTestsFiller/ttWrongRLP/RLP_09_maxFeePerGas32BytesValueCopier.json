@@ -1,19 +1,19 @@
 {
     "RLP_09_maxFeePerGas32BytesValue" : {
         "result" : {
-            "Berlin" : {
+            "ETC_Magneto" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Byzantium" : {
+            "ETC_Atlantis" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Constantinople" : {
+            "ETC_Agharta" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix" : {
+            "ETC_Agharta" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "ETC_Phoenix" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "London" : {
+            "ETC_Mystique" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x5208"
             }

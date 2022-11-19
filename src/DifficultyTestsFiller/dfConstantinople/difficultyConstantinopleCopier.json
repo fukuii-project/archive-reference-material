@@ -1,6 +1,6 @@
 {
     "difficultyConstantinople": {
-        "Constantinople": {
+        "ETC_Agharta": {
             "DifficultyTest1": {
                 "parentTimestamp": "0x63ed689e8",
                 "parentDifficulty": "0x56bba5a95b3dff04",

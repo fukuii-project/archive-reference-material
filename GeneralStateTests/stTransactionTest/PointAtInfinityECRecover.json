@@ -2,13 +2,13 @@
     "PointAtInfinityECRecover" : {
         "_info" : {
             "comment" : "",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "ddfc98d67f454a11294fabc4ccb67e61d96d0dd8f40a14100a080a5a3aa21800",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "a8c1a9ebc6ab988baaff6463f65c5cf71d6ea60cf109de7078d7fa4274326c28",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stTransactionTest/PointAtInfinityECRecoverFiller.yml",
-            "sourceHash" : "0a7094aaefc61966d0680280d8508bb02fb357a88c0905893492eb56160b1010"
+            "sourceHash" : "7bc4e6cf21424265970f32ea3f4e76fdcbb559af687d5bf7442c39f6dd0af1a0"
         },
         "env" : {
             "currentBaseFee" : "0x0a",
@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "ETC_Magneto" : [
                 {
                     "hash" : "0x3ea77da2ce6dddb3e0579007cec519a4dabcbb406038aaf517a295e8f96d8660",
                     "indexes" : {
@@ -30,7 +30,7 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf860800a8398968094000000000000000000000000000000000000ff0a80801ca087a3a3a16259f6d19712a4066e1685ee514322be23a682d586e5091c6ebeb4a2a02ad425cbf21f2487fab7147553f9db6803b7c6da28b409d57fd8acec8f0350d3"
+                    "txbytes" : "0xf861800a8398968094000000000000000000000000000000000000ff0a8080819da0da1bffcc7f62ef2b97ed8590c0ba9e3696613060b2af55e35757d420c59a30afa028959ed08ffc01f9acbae10a537e663b5f39566007d4de4cf0db8959a11122d8"
                 }
             ]
         },

@@ -9,7 +9,7 @@
             "sourceHash" : "6a93ac1ddbb420cb2d17a9e2272d7615ee75fa5b1674fd72a3d41c4ef54380ec"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "ETC_Phoenix",
         "exceptions" : [
             "Check State: Remote account '0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b' test expected storage key: '0x00' to be set to: '0x11', but remote key '0x00' does not exist!",
             "CompareStates failed with errors: IncorrectStorage"

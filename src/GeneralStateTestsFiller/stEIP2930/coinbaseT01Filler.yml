@@ -96,7 +96,7 @@ coinbaseT01:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       000000000000000000000000000000000000C0DE:
         storage:
@@ -110,7 +110,7 @@ coinbaseT01:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       000000000000000000000000000000000000C0DE:
         storage:

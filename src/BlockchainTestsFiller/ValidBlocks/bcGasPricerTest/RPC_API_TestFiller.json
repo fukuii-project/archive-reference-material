@@ -22,7 +22,7 @@
     	"expect" : [
 	    {
             "//comment" : "Test has uncles on block5 make now no sense on PoS Merge",
-		    "network" : ["Istanbul", "Berlin", "London"],
+		    "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		    "result" : {
 			    "6295ee1b4f6dd65047762f924ecd367c17eabf8f" : {
 	    			"balance" : "320"
@@ -93,13 +93,13 @@
             {
                 "blocknumber" : "4",
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "ETC_Phoenix" : {
                         "stateRoot" : "0xc207fe00a6b614648675ebb07a0af198bfffde56baa28d3e3182b1fb66dc291b"
                     },
-                    "Berlin" : {
+                    "ETC_Magneto" : {
                         "stateRoot" : "0x129702997a2c6c1259d39098213aa9ef2957c05da45c275065e91a682422d39d"
                     },
-                    "London" : {
+                    "ETC_Mystique" : {
                         "stateRoot" : "0x19c9013212b96f75f9bd0119892ada18e26fa9fa341de938490d7dc182fd09bd"
                     }
                 },

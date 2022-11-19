@@ -1,19 +1,19 @@
 {
     "RLPAddressWithFirstZeros": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "AddressTooLong",
 				"intrinsicGas" : "0x00"
             }

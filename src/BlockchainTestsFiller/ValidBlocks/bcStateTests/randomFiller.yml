@@ -105,7 +105,7 @@ random:
   expect:
 
   - network:
-    - Merge
+    - ETC_Mystique
     result:
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
         storage:

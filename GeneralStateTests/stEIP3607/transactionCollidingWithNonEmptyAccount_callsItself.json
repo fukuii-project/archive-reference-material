@@ -2,13 +2,13 @@
     "transactionCollidingWithNonEmptyAccount_callsItself" : {
         "_info" : {
             "comment" : "Account with non-empty code attempts to send tx to call itself",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "4005c67bbb07bc0fd4b1d869a3cd160f69cf16c2840437c5f5e5cde778560313",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "9ae9697b44bd821619ee20769bd0016c582c3a4810dbc1f50f23d698b8a52e67",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stEIP3607/transactionCollidingWithNonEmptyAccount_callsItselfFiller.yml",
-            "sourceHash" : "69eb2b63e8120c345a44d6f84f692566a476fe31953ab362f725e47b592683a3"
+            "sourceHash" : "92be1edf6d75a733af96fc6a5b69a3715432a547bbcce80396ed6b48c991de4e"
         },
         "env" : {
             "currentBaseFee" : "0x0a",
@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "London" : [
+            "ETC_Mystique" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xb326b0f9bdbf3dac935ffe578676ceb8c10e369aac5d96521900815951e04ff9",
@@ -31,20 +31,7 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf863800a83061a8094a94f5374fce5edbc8e2a8697c15331677e6ebf0b830186a0801ba02babb190411301aad79da24e4a6bf1cb3197855e76dfadbc76a85bbf5b1e3ea3a033b4a142663a140757c5eb1af576fc328eb0a4f711730886c03a587abc2173de"
-                }
-            ],
-            "Merge" : [
-                {
-                    "expectException" : "SenderNotEOA",
-                    "hash" : "0xb326b0f9bdbf3dac935ffe578676ceb8c10e369aac5d96521900815951e04ff9",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf863800a83061a8094a94f5374fce5edbc8e2a8697c15331677e6ebf0b830186a0801ba02babb190411301aad79da24e4a6bf1cb3197855e76dfadbc76a85bbf5b1e3ea3a033b4a142663a140757c5eb1af576fc328eb0a4f711730886c03a587abc2173de"
+                    "txbytes" : "0xf864800a83061a8094a94f5374fce5edbc8e2a8697c15331677e6ebf0b830186a080819ea07c89022f5351bd096140d8f7bf525eedf5ce7b7a616b9598ccc4fa6a6a2bc776a05252626b40abec8c748d6a1a4144eb345c51f9bf5500d571ddd07ae228c66c5a"
                 }
             ]
         },

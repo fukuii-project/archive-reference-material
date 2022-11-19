@@ -130,7 +130,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000100:
           storage:
@@ -142,7 +142,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000101:
           storage:
@@ -154,7 +154,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000102:
           storage:
@@ -166,7 +166,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000103:
           storage:
@@ -178,7 +178,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000104:
           storage:
@@ -191,7 +191,7 @@ xor:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000105:
           storage:

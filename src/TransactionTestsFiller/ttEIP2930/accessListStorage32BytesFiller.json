@@ -3,7 +3,7 @@
     {
         "expectException" :
         {
-            "<Berlin" : "TR_TypeNotSupported"
+            "<ETC_Magneto" : "TR_TypeNotSupported"
         },
         "transaction" :
         {

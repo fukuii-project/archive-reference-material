@@ -226,5 +226,5 @@ randomStatetest384:
         value: !!int -1
 
       network:
-        - '>=London'
+        - '>=ETC_Mystique'
       result: {}

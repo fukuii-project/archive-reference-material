@@ -306,7 +306,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000100:
           storage:
@@ -319,7 +319,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000101:
           storage:
@@ -331,7 +331,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000102:
           storage:
@@ -345,7 +345,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000103:
           storage:
@@ -359,7 +359,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000104:
           storage:
@@ -375,7 +375,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000105:
           storage:
@@ -390,7 +390,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000106:
           storage:
@@ -403,7 +403,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         0000000000000000000000000000000000000107:
           storage:
@@ -417,7 +417,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         # Run out of gas
         0000000000000000000000000000000000000108:
@@ -433,7 +433,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         0000000000000000000000000000000000000109:
           storage:
@@ -444,7 +444,7 @@ sha3:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         0000000000000000000000000000000000000109:
           storage:
@@ -457,7 +457,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010a:
           storage:
@@ -468,7 +468,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010a:
           storage:
@@ -481,7 +481,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010b:
           storage:
@@ -492,7 +492,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010b:
           storage:
@@ -506,7 +506,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010c:
           storage:
@@ -517,7 +517,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010c:
           storage:
@@ -532,7 +532,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010d:
           storage:
@@ -543,7 +543,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010d:
           storage:
@@ -557,7 +557,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010e:
           storage:
@@ -568,7 +568,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010e:
           storage:
@@ -581,7 +581,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         000000000000000000000000000000000000010f:
           storage:
@@ -592,7 +592,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         000000000000000000000000000000000000010f:
           storage:
@@ -605,7 +605,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         0000000000000000000000000000000000000110:
           storage:
@@ -616,7 +616,7 @@ sha3:
         gas: !!int -1 
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         0000000000000000000000000000000000000110:
           storage:

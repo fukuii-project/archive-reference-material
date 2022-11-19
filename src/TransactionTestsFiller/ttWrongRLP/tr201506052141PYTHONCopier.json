@@ -1,19 +1,19 @@
 {
     "tr201506052141PYTHON": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "InvalidVRS",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "InvalidChainID",
 				"intrinsicGas" : "0x00"
             }

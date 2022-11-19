@@ -15,7 +15,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : [">=Istanbul"],
+                "network" : [">=ETC_Phoenix"],
                 "result" : {
                     "00000000427fffffffffffffffffffffffffffff" : {
                         "code" : "0x",

@@ -3,22 +3,22 @@
         "blocks" : [
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "ETC_Phoenix" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8"
                     },
-                    "Berlin" : {
+                    "ETC_Magneto" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8"
                     },
-                    "London" : {
+                    "ETC_Mystique" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8"
                     },
-                    ">=Merge" : {
+                    ">=ETC_Mystique" : {
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8"
                     }
@@ -41,7 +41,7 @@
     	"sealEngine" : "NoProof",
         "expect" : [
 	    {
-		    "network" : [">=Istanbul"],
+		    "network" : [">=ETC_Phoenix"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
 				    "balance" : "0x38df83ff",

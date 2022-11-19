@@ -15,7 +15,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : ["Istanbul", "Berlin"],
+                "network" : ["ETC_Phoenix", "ETC_Magneto"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "1000000000000000010",
@@ -37,7 +37,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : [">=London"],
+                "network" : [">=ETC_Mystique"],
                 "result" : {
                     "095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "1000000000000000010",
@@ -45,7 +45,7 @@
                         }
                     },
                     "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba" : {
-                        "balance" : "0"
+                        "balance" : "212060"
                     },
                     "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "balance" : "1022637930",

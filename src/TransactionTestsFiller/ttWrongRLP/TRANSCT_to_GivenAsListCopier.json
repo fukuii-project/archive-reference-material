@@ -1,19 +1,19 @@
 {
     "TRANSCT_to_GivenAsList": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "InvalidTo",
 				"intrinsicGas" : "0x00"
             }

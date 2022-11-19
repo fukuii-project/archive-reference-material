@@ -53,7 +53,7 @@ badTimestamp:
 
   # One second after the previous block
   - blockHeader:
-       'London': 
+       'ETC_Mystique': 
           timestamp: 1620000001
           # When the time difference < 9 seconds the difficulty is supposed to
           # increase. However, because retesteth gets the block from geth and then
@@ -61,17 +61,17 @@ badTimestamp:
           #
           # Therefore if timediff < 9, we need to specify the difficulty manually
           difficulty: 131136
-       '>=Merge':
+       '>=ETC_Mystique':
           timestamp: 1620000001
     blocknumber: 1
     transactions: []
 
   # One second after the previous block
   - blockHeader:
-       'London':
+       'ETC_Mystique':
           timestamp: 1620000002
           difficulty: 131200
-       '>=Merge':
+       '>=ETC_Mystique':
           timestamp: 1620000002
     blocknumber: 2
     transactions: []
@@ -88,7 +88,7 @@ badTimestamp:
     blocknumber: 4
     transactions: []
     expectException:
-      '>=London': InvalidTimestampOlderParent
+      '>=ETC_Mystique': InvalidTimestampOlderParent
 
 
   # Another legitimate block
@@ -104,7 +104,7 @@ badTimestamp:
     blocknumber: 5
     transactions: []
     expectException:
-      '>=London': InvalidTimestampOlderParent
+      '>=ETC_Mystique': InvalidTimestampOlderParent
 
   # Time stands still?
   - blockHeader:
@@ -112,15 +112,15 @@ badTimestamp:
     blocknumber: 5
     transactions: []
     expectException:
-      '>=London': InvalidTimestampOlderParent
+      '>=ETC_Mystique': InvalidTimestampOlderParent
 
 
   # Finally a legitimate block
   - blockHeader:
-       'London':
+       'ETC_Mystique':
           timestamp: 1620007200
           difficulty: 131072
-       '>=Merge':
+       '>=ETC_Mystique':
           timestamp: 1620007200
     blocknumber: 5
     transactions: []
@@ -155,7 +155,7 @@ badTimestamp:
 
   expect:
   - network:
-    - ">=London"
+    - ">=ETC_Mystique"
     # No real result, this test is based on exceptions
     # No transactions, so no need to check the nonces either
     result: {}

@@ -687,7 +687,7 @@ diffPlaces:
         value: !!int -1
 
       network:
-        - '>=London'
+        - '>=ETC_Mystique'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

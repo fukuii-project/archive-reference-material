@@ -30,7 +30,7 @@
             "gas": -1,
             "value": -1
           },
-          "network": ["EIP150", "EIP158", "Byzantium", "Constantinople", "ConstantinopleFix"],
+          "network": ["EIP150", "EIP158", "ETC_Atlantis", "ETC_Agharta", "ETC_Agharta"],
           "result": {
             "1000000000000000000000000000000000000000": {
               "storage": {
@@ -45,7 +45,7 @@
             "gas": -1,
             "value": -1
           },
-          "network": ["Istanbul"],
+          "network": ["ETC_Phoenix"],
           "result": {
             "1000000000000000000000000000000000000000": {
               "storage": {
@@ -60,7 +60,7 @@
             "gas": -1,
             "value": -1
           },
-          "network": [">=Berlin"],
+          "network": [">=ETC_Magneto"],
           "result": {
             "1000000000000000000000000000000000000000": {
               "storage": {

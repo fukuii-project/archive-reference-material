@@ -149,7 +149,7 @@ baseFee:
 
     - data: :raw 0x0302
       expectException:
-        ">=London": TR_TipGtFeeCap
+        ">=ETC_Mystique": TR_TipGtFeeCap
       accessList: []
       gasLimit: 1000000000000	
       maxPriorityFeePerGas: 100000
@@ -194,7 +194,7 @@ baseFee:
 
     - data: :raw 0x0402
       expectException:
-        ">=London": TR_TipGtFeeCap
+        ">=ETC_Mystique": TR_TipGtFeeCap
       accessList: []
       gasLimit: 1000000000000	
       maxPriorityFeePerGas: 100000
@@ -229,7 +229,7 @@ baseFee:
 
   expect:
   - network:
-    - ">=London"
+    - ">=ETC_Mystique"
     result:
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC: 
           storage:

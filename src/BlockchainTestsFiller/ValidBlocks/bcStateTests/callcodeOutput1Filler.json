@@ -24,7 +24,7 @@
         "expect" : [
             {
                 "//comment" : "gasPrice=0 not allowed since London",
-                "network" : ["Istanbul", "Berlin"],
+                "network" : ["ETC_Phoenix", "ETC_Magneto"],
                 "result" : {
                     "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "storage" : {

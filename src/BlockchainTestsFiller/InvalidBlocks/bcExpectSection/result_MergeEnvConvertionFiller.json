@@ -2,7 +2,7 @@
     "result_MergeEnvConvertion" : {
         "verify" : {
             "//comment" : "Verify how retesteth generate the test structures",
-            "Berlin" : {
+            "ETC_Magneto" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "shouldnotexist",
                             "difficulty" : "0x020000",
@@ -18,7 +18,7 @@
                             }
                         ]
             },
-            "London" : {
+            "ETC_Mystique" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "0x11",
                             "difficulty" : "0x020000",
@@ -34,7 +34,7 @@
                             }
                         ]
             },
-            "Merge" : {
+            "ETC_Mystique" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "0x11",
                             "difficulty" : "0x00",
@@ -98,7 +98,7 @@
         ],
         "expect" : [
             {
-                "network" : ["Berlin", "London", "Merge"],
+                "network" : ["ETC_Magneto", "ETC_Mystique", "ETC_Mystique"],
                 "result" : {
                     "0x6295ee1b4f6dd65047762f924ecd367c17eabf8f" : {
                         "code" : "0x600f60005500",

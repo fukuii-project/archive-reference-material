@@ -51,21 +51,7 @@ typeTwoBerlin:
         value: !!int -1
 
       network:
-        - Berlin
+        - '>=Frontier'
       expectException:
-        Berlin: TR_TypeNotSupported
+        '>=Frontier': TR_TypeNotSupported
       result: {}
-
-
-    - indexes:
-        data: !!int -1
-        gas:  !!int -1
-        value: !!int -1
-
-      network:
-        - '>=London'
-      result:
-        cccccccccccccccccccccccccccccccccccccccc:
-           storage:
-             0: 2
-

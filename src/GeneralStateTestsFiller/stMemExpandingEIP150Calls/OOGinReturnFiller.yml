@@ -113,7 +113,7 @@ OOGinReturn:
         gas:  !!int 0
         value: !!int 0
       network:
-        - 'Istanbul'
+        - 'ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:
@@ -131,7 +131,7 @@ OOGinReturn:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

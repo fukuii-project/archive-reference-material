@@ -192,7 +192,7 @@ log1:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
          CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
            storage:
@@ -208,7 +208,7 @@ log1:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
          CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
            storage:

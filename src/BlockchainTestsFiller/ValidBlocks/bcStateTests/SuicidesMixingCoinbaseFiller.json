@@ -20,7 +20,7 @@
 	    "sealEngine" : "NoProof",
         "expect" : [
 	        {
-                "network" : ["Istanbul", "Berlin", "London"],
+                "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
                 "result" : {
     	            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                     	"nonce" : "2"
@@ -45,7 +45,7 @@
                 }
             },
 	        {
-                "network" : [">=Merge"],
+                "network" : [">=ETC_Mystique"],
                 "result" : {
     	            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                     	"nonce" : "2"
@@ -108,19 +108,19 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "ETC_Phoenix" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0xac9493741ce4ef1867a901bc5d121b6fa7ef1258f7cd509ccd14129904483c23"
                     },
-                    "Berlin" : {
+                    "ETC_Magneto" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0x6438b33033d165c601bf8af48f26efdc1152ba14ef4b5f1fba245ddad3c6cd4d"
                     },
-                    "London" : {
+                    "ETC_Mystique" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0x53a5f1f4ae11e46b728bdc5d1fed6fbb674f824551bb5027e230b7d236f18c47"
                     },
-                    ">=Merge" : {
+                    ">=ETC_Mystique" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0x3a9ca16d23fdd664e7a93c018090724252bd14378a011b3cd9557ed0362ab0e5"
                     }

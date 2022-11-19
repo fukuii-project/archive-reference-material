@@ -20,7 +20,7 @@
 	"sealEngine" : "NoProof",
 	"expect" : [
 	        {
-		        "network" : ["Istanbul"],
+		        "network" : ["ETC_Phoenix"],
 		        "result" : {
                     "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "3"
@@ -31,7 +31,7 @@
 		        }
 	        },
 	        {
-		        "network" : ["Berlin"],
+		        "network" : ["ETC_Magneto"],
 		        "result" : {
                     "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "3"
@@ -42,7 +42,7 @@
 		        }
 	        },
 	        {
-		        "network" : ["London"],
+		        "network" : ["ETC_Mystique"],
 		        "result" : {
                     "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "3"
@@ -53,7 +53,7 @@
 		        }
 	        },
 	        {
-		        "network" : [">=Merge"],
+		        "network" : [">=ETC_Mystique"],
 		        "result" : {
                     "a94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "3"

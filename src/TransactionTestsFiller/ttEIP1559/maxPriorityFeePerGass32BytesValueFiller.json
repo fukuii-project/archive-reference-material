@@ -3,8 +3,8 @@
     {
 	    "expectException" :
         {
-          "<=Berlin" : "TR_TypeNotSupported",
-          ">=London" : "1559PriorityFeeGreaterThanBaseFee"
+          "<=ETC_Magneto" : "TR_TypeNotSupported",
+          ">=ETC_Mystique" : "1559PriorityFeeGreaterThanBaseFee"
         },
         "transaction" :
         {

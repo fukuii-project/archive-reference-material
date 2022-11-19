@@ -2,13 +2,13 @@
     "Create2OOGafterInitCodeReturndata3" : {
         "_info" : {
             "comment" : "Calls a contract that runs CREATE2 which deploy a code. then OOG happens upon deployment of the actual code. check the RETURN data buffer in initial contract",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "da69ef70be427b40edf7b5d1b7e59dc0fce0a97e4be48fa0438f9a28c5ec3a20",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "1d0a3c52e87a3bbdf14c5fbf4b83c81a4e39d585bf97f756994089e908a3c2ef",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stCreate2/Create2OOGafterInitCodeReturndata3Filler.json",
-            "sourceHash" : "126d3dbcaae20f1d4acf2345ba2ccc2a961f8020fa7fe0c4f078d28a23e4fd01"
+            "sourceHash" : "ea58d9673c8333d6cd386a0e268aba8dc53f664604cb3bfdc3cd316717192e85"
         },
         "env" : {
             "currentBaseFee" : "0x0a",
@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "ETC_Magneto" : [
                 {
                     "hash" : "0x6ed2fa34083f813cb3297b3d6922e9cd263fc4a6c1253ec1a14b4f0b55d02afb",
                     "indexes" : {
@@ -30,10 +30,10 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf85f800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b80801ba0218b16ddb45b30b08298f1b83b556fdb43f9b24298883a0a53a3901ace7c20b6a071786b1b966b14d9cca3eb42ff4d9a04248660ce2e727ca1e6c69d4014daddf4"
+                    "txbytes" : "0xf860800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b8080819ea07538fd6102af58caaf290b00aa176249179d961752d36df774b57151392df8e3a016b2c713fe8b1601aeb9d0b52cfee3804d07f0b6d5865b0d6202dde0f8ed22b9"
                 }
             ],
-            "Istanbul" : [
+            "ETC_Mystique" : [
                 {
                     "hash" : "0x6ed2fa34083f813cb3297b3d6922e9cd263fc4a6c1253ec1a14b4f0b55d02afb",
                     "indexes" : {
@@ -42,31 +42,19 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf85f800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b80801ba0218b16ddb45b30b08298f1b83b556fdb43f9b24298883a0a53a3901ace7c20b6a071786b1b966b14d9cca3eb42ff4d9a04248660ce2e727ca1e6c69d4014daddf4"
+                    "txbytes" : "0xf860800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b8080819ea07538fd6102af58caaf290b00aa176249179d961752d36df774b57151392df8e3a016b2c713fe8b1601aeb9d0b52cfee3804d07f0b6d5865b0d6202dde0f8ed22b9"
                 }
             ],
-            "London" : [
+            "ETC_Phoenix" : [
                 {
-                    "hash" : "0x9a0f91727a375251fdde65989a6538dcf2c04730a373e03a318996ffcfb5360c",
+                    "hash" : "0x6ed2fa34083f813cb3297b3d6922e9cd263fc4a6c1253ec1a14b4f0b55d02afb",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf85f800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b80801ba0218b16ddb45b30b08298f1b83b556fdb43f9b24298883a0a53a3901ace7c20b6a071786b1b966b14d9cca3eb42ff4d9a04248660ce2e727ca1e6c69d4014daddf4"
-                }
-            ],
-            "Merge" : [
-                {
-                    "hash" : "0x9a0f91727a375251fdde65989a6538dcf2c04730a373e03a318996ffcfb5360c",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf85f800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b80801ba0218b16ddb45b30b08298f1b83b556fdb43f9b24298883a0a53a3901ace7c20b6a071786b1b966b14d9cca3eb42ff4d9a04248660ce2e727ca1e6c69d4014daddf4"
+                    "txbytes" : "0xf860800a82d6d894c94f5374fce5edbc8e2a8697c15331677e6ebf0b8080819ea07538fd6102af58caaf290b00aa176249179d961752d36df774b57151392df8e3a016b2c713fe8b1601aeb9d0b52cfee3804d07f0b6d5865b0d6202dde0f8ed22b9"
                 }
             ]
         },

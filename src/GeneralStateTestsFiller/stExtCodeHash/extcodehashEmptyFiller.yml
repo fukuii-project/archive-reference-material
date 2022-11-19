@@ -64,7 +64,7 @@ extcodehashEmpty:
            [[4]] (- @0x20 @0x40 19)
 
            ; Also, the EXTCODEHASH cost here is for a previously touched
-           ; account, which makes it a lot lower (>=Berlin)
+           ; account, which makes it a lot lower (>=ETC_Magneto)
         }
       nonce: '0'
       storage: {}
@@ -252,7 +252,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -270,7 +270,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -288,7 +288,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -306,7 +306,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -323,7 +323,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -340,7 +340,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -358,7 +358,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -375,7 +375,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -392,7 +392,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         # We don't care about C0EA7E (which obviously is not empty)
         # We care about the account it creates.
@@ -408,7 +408,7 @@ extcodehashEmpty:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         # We don't care about C0EA7E2 (which obviously is not empty)
         # We care about the account it creates.

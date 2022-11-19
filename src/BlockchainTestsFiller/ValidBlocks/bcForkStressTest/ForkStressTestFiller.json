@@ -42,7 +42,7 @@
         "expect" : [
 	    {
             "//comment" : "the test does not make sense on PoS forks, as the forkchoise is done by engineAPI commands",
-		    "network" : ["Istanbul", "Berlin", "London"],
+		    "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		    "result" : {
                 "//comment" : "chain g29", 
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {

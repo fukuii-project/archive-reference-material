@@ -350,7 +350,7 @@ gasCostMemory:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         095e7baea6a6c7c4c2dfeb977efac326af552d87:
           storage:
@@ -425,7 +425,7 @@ gasCostMemory:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         095e7baea6a6c7c4c2dfeb977efac326af552d87:
           storage:
@@ -453,7 +453,7 @@ gasCostMemory:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         095e7baea6a6c7c4c2dfeb977efac326af552d87:
           storage:

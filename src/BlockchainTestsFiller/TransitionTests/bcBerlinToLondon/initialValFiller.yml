@@ -371,7 +371,7 @@ initialVal:
 
   expect:
   - network:
-    - BerlinToLondonAt5
+    - ETC_MagnetoToLondonAt5
 
     result:
       0xcccccccccccccccccccccccccccccccccccccccd:

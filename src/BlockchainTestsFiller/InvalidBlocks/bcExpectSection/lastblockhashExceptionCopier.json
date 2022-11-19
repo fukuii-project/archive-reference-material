@@ -12,7 +12,7 @@
             "lastblockhash does not match! remote: '0xf88512d9e022357594866c44ecaa2fc9cb48f34d1987e401109400761aeb898d', test: '0xe88512d9e022357594866c44ecaa2fc9cb48f34d1987e401109400761aeb898d'"
         ],
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "ETC_Phoenix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x09184e72a000",

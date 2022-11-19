@@ -152,7 +152,7 @@ emptyPostTransfer:
 
   expect:
   - network:
-    - ">=Merge"
+    - ">=ETC_Mystique"
     result:
       0xcccccccccccccccccccccccccccccccccccccccc:
         storage:

@@ -11,7 +11,7 @@
         "expect" : [
 	    {
             "//comment" : "Contract Creation Spam is so expensive that it is failing on 10M gas",
-	        "network" : [ "Istanbul"],
+	        "network" : [ "ETC_Phoenix"],
 	        "indexes" : { "data" : -1, "gas" : -1, "value" : -1 },
 	        "result" : {
                         "6a0a0fc761c612c340a0e98d33b37a75e5268472" : {
@@ -56,7 +56,7 @@
 	    },
 	    {
             "//comment" : "Running OOG on contract creation, eating ~10M gas",
-	        "network" : [ ">=Berlin"],
+	        "network" : [ ">=ETC_Magneto"],
 	        "indexes" : { "data" : -1, "gas" : -1, "value" : -1 },
 	        "result" : {
                         "6a0a0fc761c612c340a0e98d33b37a75e5268472" : {

@@ -17,7 +17,7 @@ accessListExample:
         value: !!int -1
 
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         095e7baea6a6c7c4c2dfeb977efac326af552d87:
           storage:
@@ -44,17 +44,17 @@ accessListExample:
 
       network:
         - 'EIP158'
-        - 'Byzantium'
-        - 'Constantinople'
-        - 'ConstantinopleFix'
-        - 'Istanbul'
+        - 'ETC_Atlantis'
+        - 'ETC_Agharta'
+        - 'ETC_Agharta'
+        - 'ETC_Phoenix'
       result: {}
       expectException:     
         'EIP158': TR_TypeNotSupported
-        'Byzantium': TR_TypeNotSupported
-        'Constantinople': TR_TypeNotSupported
-        'ConstantinopleFix': TR_TypeNotSupported
-        'Istanbul': TR_TypeNotSupported
+        'ETC_Atlantis': TR_TypeNotSupported
+        'ETC_Agharta': TR_TypeNotSupported
+        'ETC_Agharta': TR_TypeNotSupported
+        'ETC_Phoenix': TR_TypeNotSupported
 
 
 

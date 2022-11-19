@@ -247,7 +247,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 100000000
@@ -267,7 +267,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 99976000
@@ -283,7 +283,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 99957000
@@ -303,7 +303,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 99938000
@@ -324,7 +324,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 99914000
@@ -339,7 +339,7 @@ transactionCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
         balance: 99285000

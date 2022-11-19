@@ -1,19 +1,19 @@
 {
     "TRANSCT__ZeroByteAtRLP_0": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "RLP_Error_RLP_Size",
 				"intrinsicGas" : "0x00"
             }

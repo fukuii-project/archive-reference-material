@@ -20,7 +20,7 @@
 	"sealEngine" : "NoProof",
 	"expect" : [
 	        {
-		        "network" : ["Istanbul", "Berlin", "London"],
+		        "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		        "result" : {
 			        "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
         				"balance" : "30"
@@ -78,13 +78,13 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "ETC_Phoenix" : {
                         "stateRoot" : "0xa8c8475b7e9f2c65d18ae404ce879cec03221d7adadc31e082993fdcc5e7cb15"
                     },
-                    "Berlin" : {
+                    "ETC_Magneto" : {
                         "stateRoot" : "0xa8c8475b7e9f2c65d18ae404ce879cec03221d7adadc31e082993fdcc5e7cb15"
                     },
-                    "London" : {
+                    "ETC_Mystique" : {
                         "stateRoot" : "0x32f5c46293bb6295016aec69a1c59871c8d124337e52f50a723d6f1b0da03236"
                     }
                 },

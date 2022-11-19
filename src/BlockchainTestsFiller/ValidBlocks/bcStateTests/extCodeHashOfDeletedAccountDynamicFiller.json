@@ -23,7 +23,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	   {
-		    "network" : [">=Istanbul"],
+		    "network" : [">=ETC_Phoenix"],
 		    "result" : {
 			    "0000000000000000000000000000000000000001" : {
                     "balance" : "1"

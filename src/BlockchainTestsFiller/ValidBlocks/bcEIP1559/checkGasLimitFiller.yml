@@ -81,7 +81,7 @@ checkGasLimit:
       value: 0x0
     - data: ''
       expectException:
-        ">=London": TR_GasLimitReached
+        ">=ETC_Mystique": TR_GasLimitReached
       accessList: []
       gasLimit: 1000000  # 1m gas
       maxPriorityFeePerGas: 0x00
@@ -156,7 +156,7 @@ checkGasLimit:
     transactions:
     - data: ''
       expectException:
-        ">=London": TR_GasLimitReached
+        ">=ETC_Mystique": TR_GasLimitReached
       accessList: []
       gasLimit: 4000001
       maxPriorityFeePerGas: 0x00
@@ -172,7 +172,7 @@ checkGasLimit:
 
   expect:
   - network:
-    - ">=London"
+    - ">=ETC_Mystique"
     # No real result, this test is based on whether transactions are 
     # considered valid or not. But at least we can count transactions
     result:

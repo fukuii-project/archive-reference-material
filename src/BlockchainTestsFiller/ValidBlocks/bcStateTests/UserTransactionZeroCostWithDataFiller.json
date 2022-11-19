@@ -21,7 +21,7 @@
         "expect" : [
 	        {
                 "//comment" : "Zero price transactions are not allowed since London due to Block.BaseFee >= 7",
-                "network" : ["Istanbul", "Berlin"],
+                "network" : ["ETC_Phoenix", "ETC_Magneto"],
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "1"

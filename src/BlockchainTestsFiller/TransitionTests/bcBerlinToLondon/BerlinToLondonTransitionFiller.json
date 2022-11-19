@@ -1,5 +1,5 @@
 {
-     "BerlinToLondonTransition" : {
+     "ETC_MagnetoToLondonTransition" : {
         "genesisBlockHeader" : {
             "bloom" : "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
             "coinbase" : "0x8888f1f195afa192cfee860698584c030f4c9db1",
@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "BerlinToLondonAt5",
+                "network" : "ETC_MagnetoToLondonAt5",
                 "result" : {
                     "0x8888f1f195afa192cfee860698584c030f4c9db1" : {
                         "nonce" : "0"
@@ -64,7 +64,7 @@
                     "baseFeePerGas" : "0x3b9aca00"
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "InvalidGasLimit2"
+                    "ETC_MagnetoToLondonAt5" : "InvalidGasLimit2"
                 },
                 "transactions" : [
                 ],
@@ -78,7 +78,7 @@
                     "baseFeePerGas" : "0x3b9aca00"
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "1559BlockImportImpossible_HeaderIsLegacy"
+                    "ETC_MagnetoToLondonAt5" : "1559BlockImportImpossible_HeaderIsLegacy"
                 },
                 "transactions" : [
                 ],
@@ -90,7 +90,7 @@
                 "transactions" : [
                     {
                         "expectException" : {
-                            "BerlinToLondonAt5" : "TR_TypeNotSupported"
+                            "ETC_MagnetoToLondonAt5" : "TR_TypeNotSupported"
                         },
                         "data" : "{ [[1]] 12 (RETURN 0 (lll { [[0]] 15  } 0)) }",
                         "accessList" : [
@@ -121,7 +121,7 @@
                     "remove" : [ "baseFeePerGas" ]
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "LegacyBlockImportImpossible"
+                    "ETC_MagnetoToLondonAt5" : "LegacyBlockImportImpossible"
                 },
                 "transactions" : [
                 ],
@@ -134,7 +134,7 @@
                     "gasLimit" : "6289320"
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "InvalidGasLimit2"
+                    "ETC_MagnetoToLondonAt5" : "InvalidGasLimit2"
                 },
                 "transactions" : [
                 ],
@@ -147,7 +147,7 @@
                     "gasLimit" : "6277048"
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "InvalidGasLimit2"
+                    "ETC_MagnetoToLondonAt5" : "InvalidGasLimit2"
                 },
                 "transactions" : [
                 ],
@@ -160,7 +160,7 @@
                     "gasLimit" : "3144650"
                 },
                 "expectException" : {
-                    "BerlinToLondonAt5" : "InvalidGasLimit2"
+                    "ETC_MagnetoToLondonAt5" : "InvalidGasLimit2"
                 },
                 "transactions" : [
                 ],

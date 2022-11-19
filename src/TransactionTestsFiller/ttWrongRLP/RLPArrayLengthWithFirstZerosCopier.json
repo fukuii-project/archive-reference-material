@@ -1,19 +1,19 @@
 {
     "RLPArrayLengthWithFirstZeros": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "LeadingZerosDataSize",
 				"intrinsicGas" : "0x00"
             }

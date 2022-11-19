@@ -1,19 +1,19 @@
 {
     "RLPNonceWithFirstZeros": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "LeadingZerosNonce",
 				"intrinsicGas" : "0x00"
             }

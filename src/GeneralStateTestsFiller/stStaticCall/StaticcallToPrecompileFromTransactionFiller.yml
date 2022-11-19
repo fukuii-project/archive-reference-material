@@ -17,7 +17,7 @@ StaticcallToPrecompileFromTransaction:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       a000000000000000000000000000000000000000:
         storage:

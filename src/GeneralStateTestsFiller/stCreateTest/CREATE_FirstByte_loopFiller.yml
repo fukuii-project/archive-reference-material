@@ -50,7 +50,7 @@ CREATE_FirstByte_loop:
        gas: !!int -1
        value: !!int -1
       network:
-        - 'Berlin'
+        - 'ETC_Magneto'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -79,7 +79,7 @@ CREATE_FirstByte_loop:
        gas: !!int -1
        value: !!int -1
       network:
-        - '>=London'
+        - '>=ETC_Mystique'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1

@@ -571,7 +571,7 @@ addressOpcodes:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000100:
         storage:
@@ -592,7 +592,7 @@ addressOpcodes:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000100:
         storage:

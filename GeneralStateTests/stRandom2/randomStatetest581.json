@@ -2,13 +2,13 @@
     "randomStatetest581" : {
         "_info" : {
             "comment" : "",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "3f897caf4ee105d5f0051dadc85d0b1dfadbcceba1ca3e5ca7e72fe8ee472678",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "3c67f679903a8593db685f2a05eda0ec5a9c4f7d8cb4b756119205d012f8bdb4",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stRandom2/randomStatetest581Filler.json",
-            "sourceHash" : "766c9c469586366f228ca2ae9d5d6a661a6a884134f429f7eac928215e945aef"
+            "sourceHash" : "2cc7db4dd9d350460c5b58fb7717f73e7665c8518d619d025841235098f32d62"
         },
         "env" : {
             "currentBaseFee" : "0x0a",
@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "ETC_Magneto" : [
                 {
                     "hash" : "0x001508b9cb47c6e779f419e39245f9ebcc27dd586ef6793e31b088e73f4c6df5",
                     "indexes" : {
@@ -30,10 +30,22 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf90136800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d70121ca08c7c692ae0a7676869b627ae0697a3b2ff97c81f40907f8d3c55c9756485da8ca05b7b517384b2e1a4dd304e6465594d5e836e32d199c1ed89b19c5125f178f4cc"
+                    "txbytes" : "0xf90137800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d7012819da0cde00303fa6620259ccb33bf628d1633efb59f16b6b19d8d265ae8b32e4b4b94a027b4b58f94d1fc0db17edbf1090466f1c5c36d5980013443e1c4f02b5c5d94e5"
                 }
             ],
-            "Istanbul" : [
+            "ETC_Mystique" : [
+                {
+                    "hash" : "0x7b97e065cbee4bbd11b168a3ab7e3d86977995665d6803e294abaec6df96ee9e",
+                    "indexes" : {
+                        "data" : 0,
+                        "gas" : 0,
+                        "value" : 0
+                    },
+                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+                    "txbytes" : "0xf90137800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d7012819da0cde00303fa6620259ccb33bf628d1633efb59f16b6b19d8d265ae8b32e4b4b94a027b4b58f94d1fc0db17edbf1090466f1c5c36d5980013443e1c4f02b5c5d94e5"
+                }
+            ],
+            "ETC_Phoenix" : [
                 {
                     "hash" : "0x50926ebb3f145211b9077d17c1ec8500518e72ebe9ffa17a0b32ca8f132ca952",
                     "indexes" : {
@@ -42,31 +54,7 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf90136800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d70121ca08c7c692ae0a7676869b627ae0697a3b2ff97c81f40907f8d3c55c9756485da8ca05b7b517384b2e1a4dd304e6465594d5e836e32d199c1ed89b19c5125f178f4cc"
-                }
-            ],
-            "London" : [
-                {
-                    "hash" : "0xf5adf179c3d8cda8181d8d3e4bfe1d0e4c9ee1e5eae6c70764fb43d48ee49823",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf90136800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d70121ca08c7c692ae0a7676869b627ae0697a3b2ff97c81f40907f8d3c55c9756485da8ca05b7b517384b2e1a4dd304e6465594d5e836e32d199c1ed89b19c5125f178f4cc"
-                }
-            ],
-            "Merge" : [
-                {
-                    "hash" : "0xf5adf179c3d8cda8181d8d3e4bfe1d0e4c9ee1e5eae6c70764fb43d48ee49823",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf90136800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d70121ca08c7c692ae0a7676869b627ae0697a3b2ff97c81f40907f8d3c55c9756485da8ca05b7b517384b2e1a4dd304e6465594d5e836e32d199c1ed89b19c5125f178f4cc"
+                    "txbytes" : "0xf90137800a8412fe8a6894095e7baea6a6c7c4c2dfeb977efac326af552d87845d315a13b8d07f00000000000000000000000000000000000000000000000000000000000000017f0000000000000000000000000000000000000000000000000000000000000001037f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe7f000000000000000000000000ffffffffffffffffffffffffffffffffffffffff44920907ff7e7d7012819da0cde00303fa6620259ccb33bf628d1633efb59f16b6b19d8d265ae8b32e4b4b94a027b4b58f94d1fc0db17edbf1090466f1c5c36d5980013443e1c4f02b5c5d94e5"
                 }
             ]
         },

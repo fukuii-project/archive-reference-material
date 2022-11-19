@@ -302,7 +302,7 @@ CreateResults:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:
@@ -331,7 +331,7 @@ CreateResults:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:
@@ -365,7 +365,7 @@ CreateResults:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:
@@ -400,7 +400,7 @@ CreateResults:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:
@@ -447,7 +447,7 @@ CreateResults:
         gas:  !!int 0
         value: !!int 0
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
 
         cccccccccccccccccccccccccccccccccccccccc:

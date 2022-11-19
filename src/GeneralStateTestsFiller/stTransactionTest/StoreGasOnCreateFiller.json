@@ -15,7 +15,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : [ ">=Istanbul"],
+                "network" : [ ">=ETC_Phoenix"],
                 "result" : {
                     "f1ecf98489fa9ed60a664fc4998db699cfa39d40" : {
                         "storage" : {

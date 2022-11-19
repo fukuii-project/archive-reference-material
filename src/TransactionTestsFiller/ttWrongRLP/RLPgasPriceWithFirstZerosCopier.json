@@ -1,19 +1,19 @@
 {
     "RLPgasPriceWithFirstZeros": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             }

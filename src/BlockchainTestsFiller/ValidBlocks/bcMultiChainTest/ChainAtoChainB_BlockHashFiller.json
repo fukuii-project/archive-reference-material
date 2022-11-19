@@ -24,7 +24,7 @@
         "expect" : [
 	    {
             "//comment" : "chain reorg by TD makes no sense on PoS Merge",
-		    "network" : [ "Istanbul", "Berlin", "London"],
+		    "network" : [ "ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                     "balance" : "10000000000120",

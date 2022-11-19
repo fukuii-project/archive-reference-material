@@ -90,11 +90,13 @@ coinbaseT2:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=London"
+    - ">=ETC_Mystique"
+    expectException:
+       ">=ETC_Mystique" : "TR_TypeNotSupported"
     result:
       000000000000000000000000000000000000C0DE:
         storage:
-          0x00: 6800
+          0x00: 0
 
 
   - indexes:
@@ -102,8 +104,10 @@ coinbaseT2:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=London"
+    - ">=ETC_Mystique"
+    expectException:
+       ">=ETC_Mystique" : "TR_TypeNotSupported"
     result:
       000000000000000000000000000000000000C0DE:
         storage:
-          0x00: 9300
+          0x00: 0

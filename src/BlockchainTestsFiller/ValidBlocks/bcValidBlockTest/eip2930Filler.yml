@@ -313,7 +313,7 @@ eip2930:
 
   expect:
   - network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0xcccccccccccccccccccccccccccccccccccccccc:
         storage:

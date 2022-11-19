@@ -23,7 +23,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	        {
-		        "network" : ["Istanbul", "Berlin", "London"],
+		        "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		        "result" : {
 			        "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "30"
@@ -34,7 +34,7 @@
 		        }
 	        },
 	        {
-		        "network" : [">=Merge"],
+		        "network" : [">=ETC_Mystique"],
 		        "result" : {
 			        "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "20"
@@ -86,18 +86,18 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "ETC_Phoenix" : {
                         "stateRoot" : "0x81b1df384897709e96a4b6319fda4e8f7682a1c9d753b1fb772ed4fb19f1e443"
                     },
-                    "Berlin" : {
+                    "ETC_Magneto" : {
                         "stateRoot" : "0x81b1df384897709e96a4b6319fda4e8f7682a1c9d753b1fb772ed4fb19f1e443"
                     },
-                    ">=London" : {
+                    ">=ETC_Mystique" : {
                         "stateRoot" : "0x63e216fe8a321a278975cd9bb2947d78c5559cb4fd5844255d9f4ad35b352c37"
                     }
                 },
                 "expectException" : {
-                    ">=Merge" : "3675PreMerge1559BlockRejected"
+                    ">=ETC_Mystique" : "3675PreMerge1559BlockRejected"
                 },
                 "transactions" : [
                     {

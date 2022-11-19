@@ -240,7 +240,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -257,7 +257,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -271,7 +271,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -288,7 +288,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -302,7 +302,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -319,7 +319,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -333,7 +333,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -352,7 +352,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -366,7 +366,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -383,7 +383,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -397,7 +397,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -414,7 +414,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -428,7 +428,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -445,7 +445,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -459,7 +459,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -475,7 +475,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -489,7 +489,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -505,7 +505,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -519,7 +519,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -535,7 +535,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -549,7 +549,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -566,7 +566,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -580,7 +580,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -596,7 +596,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -610,7 +610,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -626,7 +626,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -640,7 +640,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -657,7 +657,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -671,7 +671,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -690,7 +690,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -704,7 +704,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -723,7 +723,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -737,7 +737,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -756,7 +756,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -770,7 +770,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -789,7 +789,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -803,7 +803,7 @@ eip2929:
         gas:  !!int -1
         value: !!int -1
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

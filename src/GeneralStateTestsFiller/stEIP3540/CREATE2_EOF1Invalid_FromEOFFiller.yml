@@ -282,7 +282,7 @@ CREATE2_EOF1Invalid_FromEOF:
   expect:
     - indexes: {}
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1

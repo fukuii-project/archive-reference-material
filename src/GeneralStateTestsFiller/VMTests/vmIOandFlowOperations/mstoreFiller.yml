@@ -124,7 +124,7 @@ mstore:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -138,7 +138,7 @@ mstore:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -151,7 +151,7 @@ mstore:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -164,7 +164,7 @@ mstore:
         gas:  !!int -1
         value: !!int -1
       network:
-        - '>=Istanbul'
+        - '>=ETC_Phoenix'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

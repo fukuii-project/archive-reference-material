@@ -1,6 +1,6 @@
 {
     "difficultyByzantium": {
-        "Byzantium": {
+        "ETC_Atlantis": {
             "DifficultyTest1": {
                 "parentTimestamp": "0x28d214818",
                 "parentDifficulty": "0x6963001f28ba95c2",

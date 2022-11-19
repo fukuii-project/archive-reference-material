@@ -415,7 +415,7 @@ burnVerifyLondon:
 
   expect:
   - network:
-    - London
+    - ETC_Mystique
     result:
       # Number of wei "missing" because they were burned
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:

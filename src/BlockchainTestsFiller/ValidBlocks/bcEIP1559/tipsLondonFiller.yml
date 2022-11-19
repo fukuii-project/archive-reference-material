@@ -575,7 +575,7 @@ tipsLondon:
 
   expect:
   - network:
-    - London
+    - ETC_Mystique
     result:
       # Change in miner balance, minus the block reward
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:

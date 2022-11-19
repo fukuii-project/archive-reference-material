@@ -183,7 +183,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000100:
         storage:
@@ -195,7 +195,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000101:
         storage:
@@ -212,7 +212,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000102:
         storage:
@@ -224,7 +224,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000103:
         storage:
@@ -237,7 +237,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000104:
         storage:
@@ -250,7 +250,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000105:
         storage:
@@ -264,7 +264,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000106:
         storage:
@@ -278,7 +278,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000107:
         storage:
@@ -291,7 +291,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000108:
         storage:
@@ -304,7 +304,7 @@ envInfo:
       gas:  !!int -1
       value: !!int -1
     network:
-      - '>=Istanbul'
+      - '>=ETC_Phoenix'
     result:
       0000000000000000000000000000000000000109:
         storage:

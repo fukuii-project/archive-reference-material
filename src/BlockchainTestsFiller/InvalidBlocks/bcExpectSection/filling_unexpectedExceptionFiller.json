@@ -26,7 +26,7 @@
         ],
         "expect" : [
 	    {
-		    "network" : [">=Istanbul"],
+		    "network" : [">=ETC_Phoenix"],
 		    "result" : {
 		    }
 	    }
@@ -42,7 +42,7 @@
         "blocks" : [
             {
                 "expectException" : {
-                    ">=Istanbul" : "ExtraDataTooBig"
+                    ">=ETC_Phoenix" : "ExtraDataTooBig"
                 },
                 "transactions" : [
                     {

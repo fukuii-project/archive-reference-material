@@ -15,7 +15,7 @@
             {
 				"//comment" : "Call[0] Callcode[1] delegatecall[2] staticcall[3] to suicider, then extcodehash of it",
                 "indexes" : { "data" : [0], "gas" : -1, "value" : -1 },
-                "network" : [ ">=Istanbul"],
+                "network" : [ ">=ETC_Phoenix"],
                 "result" : {
 					"1000000000000000000000000000000000000000" : {
                		    "balance" : "1",
@@ -35,7 +35,7 @@
 			{
 				"//comment" : "Call[0] Callcode[1] delegatecall[2] staticcall[3] to suicider, then extcodehash of it",
                 "indexes" : { "data" : [1,2], "gas" : -1, "value" : -1 },
-                "network" : [ ">=Istanbul"],
+                "network" : [ ">=ETC_Phoenix"],
                 "result" : {
 					"0000000000000000000000000000000000000025" : {
                		    "balance" : "1"
@@ -51,7 +51,7 @@
 			{
 				"//comment" : "Call[0] Callcode[1] delegatecall[2] staticcall[3] to suicider, then extcodehash of it",
                 "indexes" : { "data" : [3], "gas" : -1, "value" : -1 },
-                "network" : [ ">=Istanbul"],
+                "network" : [ ">=ETC_Phoenix"],
                 "result" : {
 					"0000000000000000000000000000000000000025" : {
                		    "shouldnotexist" : "1"

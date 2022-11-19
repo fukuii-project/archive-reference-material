@@ -20,7 +20,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	    {
-		    "network" : [">=Istanbul"],
+		    "network" : [">=ETC_Phoenix"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                     "balance" : "20"
@@ -72,10 +72,10 @@
             },
             {
                 "expectException" : {
-                    "Istanbul" : "TooManyUncles",
-                    "Berlin" : "TooManyUncles",
-                    "London" : "TooManyUncles",
-                    ">=Merge" : "3675PreMerge1559BlockRejected"
+                    "ETC_Phoenix" : "TooManyUncles",
+                    "ETC_Magneto" : "TooManyUncles",
+                    "ETC_Mystique" : "TooManyUncles",
+                    ">=ETC_Mystique" : "3675PreMerge1559BlockRejected"
                 },
                 "transactions" : [
                     {

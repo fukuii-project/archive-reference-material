@@ -1,6 +1,6 @@
 {
     "difficultyEIP2384_random": {
-        "Berlin": {
+        "ETC_Magneto": {
             "TestHeight10001380": {
                 "parentTimestamp": "0xa325b151",
                 "parentDifficulty": "0x3d7463c8ec830cb1",

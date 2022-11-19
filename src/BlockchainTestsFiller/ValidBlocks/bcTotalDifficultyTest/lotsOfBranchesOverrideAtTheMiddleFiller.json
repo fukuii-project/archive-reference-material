@@ -21,7 +21,7 @@
         "expect" : [
 	    {
             "//comment" : "TD chain reorgs logic is done by Beacon chain in PoS Merge",
-		    "network" : ["Istanbul", "Berlin", "London"],
+		    "network" : ["ETC_Phoenix", "ETC_Magneto", "ETC_Mystique"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                     "balance" : "620"
@@ -113,7 +113,7 @@
                 "transactions" : [
                     {
                         "expectException" : {
-                            ">=Istanbul" : "TR_GasLimitReached"
+                            ">=ETC_Phoenix" : "TR_GasLimitReached"
                         },
                         "data" : "",
                         "gasLimit" : "314134359",
@@ -135,7 +135,7 @@
                 "transactions" : [
                     {
                         "expectException" : {
-                            ">=Istanbul" : "TR_NonceTooHigh"
+                            ">=ETC_Phoenix" : "TR_NonceTooHigh"
                         },
                         "data" : ":raw 0x342354353460",
                         "gasLimit" : "314143359",
@@ -245,7 +245,7 @@
                 "transactions" : [
                     {
                         "expectException" : {
-                            ">=Istanbul" : "TR_NonceTooHigh"
+                            ">=ETC_Phoenix" : "TR_NonceTooHigh"
                         },
                         "data" : "",
                         "gasLimit" : "314159",

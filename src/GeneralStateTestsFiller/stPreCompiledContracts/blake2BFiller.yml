@@ -244,7 +244,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -261,7 +261,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -277,7 +277,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -294,7 +294,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -311,7 +311,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -329,7 +329,7 @@ blake2B:
 #      gas: !!int -1
 #      value: !!int -1
 #    network: 
-#    - ">=Istanbul"
+#    - ">=ETC_Phoenix"
 #    result:
 #      cccccccccccccccccccccccccccccccccccccccc:
 #        storage:
@@ -344,7 +344,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -360,7 +360,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -376,7 +376,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -392,7 +392,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -408,7 +408,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -425,7 +425,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -441,7 +441,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -457,7 +457,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -474,7 +474,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -490,7 +490,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -506,7 +506,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -522,7 +522,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -539,7 +539,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -555,7 +555,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -571,7 +571,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -587,7 +587,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -603,7 +603,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -619,7 +619,7 @@ blake2B:
       gas: !!int -1
       value: !!int -1
     network: 
-    - '>Istanbul'
+    - '>ETC_Phoenix'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:

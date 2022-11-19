@@ -2,13 +2,13 @@
     "mergeTest" : {
         "_info" : {
             "comment" : "Example of PoS merge state test",
-            "filling-rpc-server" : "evm version 1.10.18-unstable-53304ff6-20220503",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.be529260.Linux.g++",
-            "generatedTestHash" : "22a65ea086cd3d17a556499d29f6689f4f8b43ab45676775e080fcb70a99568a",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "476d6aeea7cabc9d16cb8693234224b8ad44029274001ec9afad0a1efd1fe5f3",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stExample/mergeTestFiller.yml",
-            "sourceHash" : "eec9a80e11e6821f9501f4fa3d896f582dd40a7655366f0d40c55e005efa7384"
+            "sourceHash" : "8847238d8986dcab1f80606c14e6932da840048821f84c390ce51ab9d0dd639f"
         },
         "env" : {
             "currentBaseFee" : "0x03e8",
@@ -21,16 +21,17 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Merge" : [
+            "ETC_Mystique" : [
                 {
-                    "hash" : "0xd4f2185ab82a4ae3b8d82179153697aa6fde5c6cf829d3ef563a9e97fb0429c8",
+                    "expectException" : "TR_TypeNotSupported",
+                    "hash" : "0xee412d62bb3ea2b9461934fd376396106106d3d5bd2ca15e9cfb784659baeceb",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0x02f8c101010a8207d0833d090094cccccccccccccccccccccccccccccccccccccccc8000f85bf85994ccccccccccccccccccccccccccccccccccccccccf842a00000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000180a0d671815898b8dd34321adbba4cb6a57baa7017323c26946f3719b00e70c755c2a03528b9efe3be57ea65a933d1e6bbf3b7d0c78830138883c1201e0c641fee6464"
+                    "txbytes" : "0x02f8c13d010a8207d0833d090094cccccccccccccccccccccccccccccccccccccccc8000f85bf85994ccccccccccccccccccccccccccccccccccccccccf842a00000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000180a0e1d94c0e98165b548ced2afc27ac6b9ee1fce6c903648ce9547439ac6122ccdda01add792bb30d52b74b61139b0d58c239a6037590832f787c88b2464910dd723c"
                 }
             ]
         },

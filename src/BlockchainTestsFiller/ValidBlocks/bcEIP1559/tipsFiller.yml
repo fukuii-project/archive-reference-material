@@ -581,7 +581,7 @@ tips:
 
   expect:
   - network:
-    - ">=Merge"
+    - ">=ETC_Mystique"
     result:
       # Change in miner balance, minus the block reward
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:

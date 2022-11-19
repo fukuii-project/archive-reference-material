@@ -51,10 +51,10 @@ transactionCollidingWithNonEmptyAccount_callsItself:
         value: !!int -1
 
       network:
-        - '>=London'
+        - '>=ETC_Mystique'
       
       # Transaction should be rejected since it is being sent by a EOA with code in it.
       expectException:
-        '>=London': 'SenderNotEOA'
+        '>=ETC_Mystique': 'SenderNotEOA'
       
       result: {}  # No point checking the result when no transaction happened

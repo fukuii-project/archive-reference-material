@@ -58,8 +58,8 @@ badUncles:
       - populateFromBlock: 1
         gasLimit: 10230000
     expectException:
-      'London': InvalidGasLimit2
-      '>=Merge': 3675PreMerge1559BlockRejected
+      'ETC_Mystique': InvalidGasLimit2
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
   # Excessively high gasLimit in uncle
   - transactions: []
@@ -68,8 +68,8 @@ badUncles:
       - populateFromBlock: 1
         gasLimit: 10250000
     expectException:
-      'London': InvalidGasLimit2
-      '>=Merge': 3675PreMerge1559BlockRejected
+      'ETC_Mystique': InvalidGasLimit2
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
 
   # Acceptable gasLimit (same as the previous one)
@@ -81,7 +81,7 @@ badUncles:
       - populateFromBlock: 1
         gasLimit: 10240000
     expectException:
-      '>=Merge': 3675PreMerge1559BlockRejected
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
 
   # Acceptable gasLimit (almost too low)
@@ -93,7 +93,7 @@ badUncles:
       - populateFromBlock: 1
         gasLimit: 10230001
     expectException:
-      '>=Merge': 3675PreMerge1559BlockRejected
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
 
   # Acceptable gasLimit (almost too high)
@@ -105,7 +105,7 @@ badUncles:
       - populateFromBlock: 1
         gasLimit: 10249999
     expectException:
-      '>=Merge': 3675PreMerge1559BlockRejected
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
   # Wrong baseFee
   - transactions: []
@@ -114,8 +114,8 @@ badUncles:
       - populateFromBlock: 2
         baseFeePerGas: 670
     expectException:
-      'London': 1559BlockImportImpossible_BaseFeeWrong
-      '>=Merge': 3675PreMerge1559BlockRejected
+      'ETC_Mystique': 1559BlockImportImpossible_BaseFeeWrong
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
   # Wrong baseFee
   - transactions: []
@@ -124,8 +124,8 @@ badUncles:
       - populateFromBlock: 2
         baseFeePerGas: 672
     expectException:
-      'London': 1559BlockImportImpossible_BaseFeeWrong
-      '>=Merge': 3675PreMerge1559BlockRejected
+      'ETC_Mystique': 1559BlockImportImpossible_BaseFeeWrong
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
 
   # Correct baseFee
@@ -146,7 +146,7 @@ badUncles:
       - populateFromBlock: 2
         baseFeePerGas: 671
     expectException:
-      '>=Merge': 3675PreMerge1559BlockRejected
+      '>=ETC_Mystique': 3675PreMerge1559BlockRejected
 
 
 
@@ -157,7 +157,7 @@ badUncles:
 
   expect:
   - network:
-    - ">=London"
+    - ">=ETC_Mystique"
     # No real result, this test is based on exceptions
     # No transactions, so no need to check the nonces either
     result: {}

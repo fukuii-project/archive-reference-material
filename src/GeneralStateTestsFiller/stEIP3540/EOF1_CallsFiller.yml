@@ -190,7 +190,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_call_eof'
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -204,7 +204,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_call_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -223,7 +223,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_callcode_eof'
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -237,7 +237,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_callcode_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -254,7 +254,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_delegatecall_eof'
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -268,7 +268,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_delegatecall_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -285,7 +285,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_staticcall_eof_failure'
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -299,7 +299,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_staticcall_eof_failure'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -314,7 +314,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_staticcall_eof'
       network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -328,7 +328,7 @@ EOF1_Calls:
     - indexes:
        data: ':label legacy_staticcall_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -345,7 +345,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_call_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -364,7 +364,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_callcode_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -381,7 +381,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_delegatecall_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -398,7 +398,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_staticcall_legacy_failure'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -413,7 +413,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_staticcall_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -430,7 +430,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_call_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -449,7 +449,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_callcode_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -466,7 +466,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_delegatecall_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -483,7 +483,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_staticcall_eof_failure'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -498,7 +498,7 @@ EOF1_Calls:
     - indexes:
        data: ':label eof_staticcall_eof'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1

@@ -2248,7 +2248,7 @@ intrinsicTip:
 
   expect:
   - network:
-    - ">=London"
+    - ">=ETC_Mystique"
     result: 
      0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
         storage:

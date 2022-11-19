@@ -1,19 +1,19 @@
 {
     "TRANSCT_to_TooShort": {
         "result": {
-            "Berlin": {
+            "ETC_Magneto": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "ETC_Atlantis": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "ETC_Agharta": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "ETC_Agharta": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
@@ -33,11 +33,11 @@
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "ETC_Phoenix": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "ETC_Mystique": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             }

@@ -2,13 +2,13 @@
     "refundMax" : {
         "_info" : {
             "comment" : "Ori Pomerantz   qbzzt1@gmail.com",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "0f5128e2257e647603715686efbf3954aaa4d2c7ec26edd60f9f87533e2c5e41",
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "6a0a8912427b9ac1100374711100c1faf9ff6a16114ffe70e52c855c93400025",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stRefundTest/refundMaxFiller.yml",
-            "sourceHash" : "587e63c712f267abfd23a8ed8c21a5ea3fe63e1062c4ce8ec011be3ca44e7011"
+            "sourceHash" : "d08458da9beb6cede17689e0d2c8e6b9e66b4c7e43dab9196456417bad0bd5f0"
         },
         "env" : {
             "currentBaseFee" : "0x03e8",
@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "ETC_Magneto" : [
                 {
                     "hash" : "0xec18beb1c78038a53167985058ab13a5f40aa2b951b973d50c24e65af1c901cf",
                     "indexes" : {
@@ -30,31 +30,19 @@
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0x01f86401018203e88327b02894cccccccccccccccccccccccccccccccccccccccc8000c080a039a0a692787fa83274937107332a154b786bf2cb1f80d1f20fe49d20da6ba324a0103bb80408321d84a1db211dfc777a640db593e889d6ec52f94d8718db3935c6"
+                    "txbytes" : "0x01f8643d018203e88327b02894cccccccccccccccccccccccccccccccccccccccc8000c001a056020e9c94c76fc76353a7b8c38448b73c4ca8764d8ebce18ed5987ddccb9788a0036c64aaf754985cf63935ca2f4156a59fc7e7b1b90b056ab3d6bcdaf10c47a7"
                 }
             ],
-            "London" : [
+            "ETC_Mystique" : [
                 {
-                    "hash" : "0xb230d4c3eb1ba2b169c35aab5530b950fec77441352ef743afbb038d0c2317ba",
+                    "hash" : "0x5d82e0b7fa95270a1cf67b4b81b701f19b5f3c401483b1bee9a2361b83abd3ff",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0x01f86401018203e88327b02894cccccccccccccccccccccccccccccccccccccccc8000c080a039a0a692787fa83274937107332a154b786bf2cb1f80d1f20fe49d20da6ba324a0103bb80408321d84a1db211dfc777a640db593e889d6ec52f94d8718db3935c6"
-                }
-            ],
-            "Merge" : [
-                {
-                    "hash" : "0xb230d4c3eb1ba2b169c35aab5530b950fec77441352ef743afbb038d0c2317ba",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0x01f86401018203e88327b02894cccccccccccccccccccccccccccccccccccccccc8000c080a039a0a692787fa83274937107332a154b786bf2cb1f80d1f20fe49d20da6ba324a0103bb80408321d84a1db211dfc777a640db593e889d6ec52f94d8718db3935c6"
+                    "txbytes" : "0x01f8643d018203e88327b02894cccccccccccccccccccccccccccccccccccccccc8000c001a056020e9c94c76fc76353a7b8c38448b73c4ca8764d8ebce18ed5987ddccb9788a0036c64aaf754985cf63935ca2f4156a59fc7e7b1b90b056ab3d6bcdaf10c47a7"
                 }
             ]
         },

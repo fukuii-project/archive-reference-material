@@ -661,7 +661,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000100:
         storage:
@@ -677,7 +677,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000100:
         storage:
@@ -693,7 +693,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000103:
         storage:
@@ -709,7 +709,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000103:
         storage:
@@ -726,7 +726,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000104:
         storage:
@@ -744,7 +744,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000104:
         storage:
@@ -760,7 +760,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000105:
         storage:
@@ -777,7 +777,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000105:
         storage:
@@ -797,7 +797,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000102:
         storage:
@@ -819,7 +819,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000102:
         storage:
@@ -835,7 +835,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000101:
         storage:
@@ -852,7 +852,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000101:
         storage:
@@ -872,7 +872,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000110:
         storage:
@@ -894,7 +894,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000111:
         storage:
@@ -915,7 +915,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000120:
         storage:
@@ -936,7 +936,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       0000000000000000000000000000000000000121:
         storage:
@@ -954,7 +954,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
@@ -976,7 +976,7 @@ storageCosts:
       gas: !!int -1
       value: !!int -1
     network:
-    - ">=Berlin"
+    - ">=ETC_Magneto"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:

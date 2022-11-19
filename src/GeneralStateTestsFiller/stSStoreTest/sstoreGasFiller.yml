@@ -132,7 +132,7 @@ sstoreGas:
         value: !!int -1
 
       network:
-        - '>=Berlin'
+        - '>=ETC_Magneto'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -154,7 +154,7 @@ sstoreGas:
         value: !!int -1
 
       network:
-        - Istanbul
+        - ETC_Phoenix
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
@@ -176,16 +176,16 @@ sstoreGas:
         value: !!int -1
 
       network:
-        - Constantinople
+        - ETC_Agharta
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             0x1000:  5000    # Non zero to non zero, cold storage
-            0x1001:   200    # Non zero to non zero, warm storage
-            0x1002:   200    # Non zero to zero, warm storage
-            0x1003:   200    # Zero to zero, warm storage
-            0x1004:   200    # Zero to non zero, warm storage
+            0x1001:  5000    # Non zero to non zero, warm storage
+            0x1002:  5000    # Non zero to zero, warm storage
+            0x1003:  5000    # Zero to zero, warm storage
+            0x1004: 20000    # Zero to non zero, warm storage
             0x1005:  5000    # Non zero to zero, cold storage
             0x1006: 20000    # Zero to non zero, cold storage
-            0x1007:   200    # Zero to zero, cold storage
+            0x1007:  5000    # Zero to zero, cold storage
             0x1008: 20000    # Zero to non-zero, warm storage that started as zero

@@ -90,7 +90,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_0xef'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -105,7 +105,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_0xef00'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -120,7 +120,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_0xef0000'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -135,7 +135,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_0xef00..00'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -150,7 +150,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_valid_eof1'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -167,7 +167,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label deploying_valid_eof1_with_data'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -184,7 +184,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_deploying_valid_eof1'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -201,7 +201,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_deploying_valid_eof1_with_data'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -218,7 +218,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_with_data_deploying_valid_eof1'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -235,7 +235,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_with_data_deploying_valid_eof1_with_data'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -253,7 +253,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_deploying_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -270,7 +270,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label eof1_initcode_with_data_deploying_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
@@ -287,7 +287,7 @@ CREATE_EOF1_FromEOF:
     - indexes:
        data: ':label legacy_initcode_deploying_legacy'
       network:
-        - 'Merge+3540+3670'
+        - 'ETC_Mystique+3540+3670'
       result:
        a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1

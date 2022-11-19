@@ -129,7 +129,7 @@ extcodehashEmptySuicide:
 
   expect:
   - network:
-    - ">=Istanbul"
+    - ">=ETC_Phoenix"
     result:
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
         storage:

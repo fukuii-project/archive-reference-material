@@ -20,7 +20,7 @@
 	"sealEngine" : "NoProof",
 	"expect" : [
 	    {
-		    "network" : ["Istanbul", "Berlin"],
+		    "network" : ["ETC_Phoenix", "ETC_Magneto"],
 		    "result" : {
 			    "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
     				"balance" : "90000000000000009986998000"
@@ -28,7 +28,7 @@
 		    }
 	    },
 	    {
-		    "network" : [">=London"],
+		    "network" : [">=ETC_Mystique"],
 		    "result" : {
 			    "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
     				"balance" : "90000000000000009973997000"

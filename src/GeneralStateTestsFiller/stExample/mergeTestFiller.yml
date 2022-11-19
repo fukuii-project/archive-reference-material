@@ -53,17 +53,10 @@ mergeTest:
     
 
   expect:
-    - indexes:
-        data: !!int -1
-        gas:  !!int -1
-        value: !!int -1
-
-      network:
-        - 'Merge'
+    - network:
+        - '>=ETC_Mystique'
+      expectException:
+        '>=ETC_Mystique': TR_TypeNotSupported
       result:
         cccccccccccccccccccccccccccccccccccccccc:
            nonce: 1
-           storage:
-            0x00: 1010    # GASPRICE
-            0x01: 1000    # BASEFEE
-            0x02: 0x1500000000000000000000000000000000000000000000000000000000000000       # Difficulty (Random)

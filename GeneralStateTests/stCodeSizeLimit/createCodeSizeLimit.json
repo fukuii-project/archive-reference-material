@@ -2,17 +2,17 @@
     "createCodeSizeLimit" : {
         "_info" : {
             "comment" : "",
-            "filling-rpc-server" : "evm version 1.10.21-unstable-692bfd1b-20220630",
-            "filling-tool-version" : "retesteth-0.2.2-testinfo+commit.1e11e5ce.Linux.g++",
-            "generatedTestHash" : "90913066aba3ec6c4981c1ef0850ca1e9af8eee7ceb5305afed3d77ed5884d01",
+            "filling-rpc-server" : "evmetc version 1.12.9-unstable-550af1e1-20221005",
+            "filling-tool-version" : "retesteth-0.2.3-postmerge+commit.ca43bb20.Linux.g++",
+            "generatedTestHash" : "0c420d71130731498dd00bab1fd02d033863fd81a198517355ee13fb704babfd",
             "labels" : {
                 "0" : "valid",
                 "1" : "invalid"
             },
-            "lllcversion" : "Version: 0.5.14-develop.2022.6.6+commit.245805fe.Linux.g++",
+            "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.5+commit.a4f2e591.Linux.g++",
             "source" : "src/GeneralStateTestsFiller/stCodeSizeLimit/createCodeSizeLimitFiller.yml",
-            "sourceHash" : "83e9c2d38543bbcf31c92169085e1c3abdefc658d0d8834f6ea580002426c001"
+            "sourceHash" : "a43e22640096d72a197f21512c89668c2d07238e6d5e4f56489037fa8fa58c24"
         },
         "env" : {
             "currentBaseFee" : "0x0a",
@@ -25,38 +25,26 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "London" : [
+            "ETC_Mystique" : [
                 {
-                    "hash" : "0x54e43b1247e3a372d6d0867f36bd36bc6d38646f6e5a327934ed170c6e810e83",
+                    "hash" : "0x6d7c707d55ff61f4560cb125de68be3123950a981a62a4028a4271d0de364c25",
                     "indexes" : {
                         "data" : 0,
                         "gas" : 0,
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf866800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80866160006000f31ca06957879e5ca2ea859efc500f71fbaabb8633c3f0a5834b18fa3d2f7267d81058a0530f5410643685c2df91d3c0e3ddb122f8fe547d715a3097810353d84f7ca8d4"
+                    "txbytes" : "0xf867800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80866160006000f3819da0691fcfe087ef86aa09e4d17bffa84da221b253bb4c806b3c3488705e53783b14a00e9477c80c8b19f636464da9702b24f3d8337fec62528ffcaa4d2a0e828d971a"
                 },
                 {
-                    "hash" : "0xd0a7bf1ef2e57b31e393560119db8aa62b5a9d89ac41449e000f013cd5093255",
+                    "hash" : "0x1b66b0209461a64135ba075b7a7dd66f0cede81372f90ec6f03139a917f77c9e",
                     "indexes" : {
                         "data" : 1,
                         "gas" : 0,
                         "value" : 0
                     },
                     "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf866800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80866160016000f31ca0390753f620ef37dbf531a3fcc72e9cd91ce82bb53c2dfd9e805518dc02edc9e5a0624951fb91c52d511a0bea95a84ece588511f2c5ec5608886ba6b06e94a6b375"
-                }
-            ],
-            "Merge" : [
-                {
-                    "hash" : "0x54e43b1247e3a372d6d0867f36bd36bc6d38646f6e5a327934ed170c6e810e83",
-                    "indexes" : {
-                        "data" : 0,
-                        "gas" : 0,
-                        "value" : 0
-                    },
-                    "logs" : "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-                    "txbytes" : "0xf866800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80866160006000f31ca06957879e5ca2ea859efc500f71fbaabb8633c3f0a5834b18fa3d2f7267d81058a0530f5410643685c2df91d3c0e3ddb122f8fe547d715a3097810353d84f7ca8d4"
+                    "txbytes" : "0xf867800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80866160016000f3819da00e73f02a23b4a6941263c9ef698c31c976289e0e9d1969bf438e29fb38536735a067be15b1ef228d3967813ffd216a1e3bcf29e3ef3c0288feacc46285e73f5ef3"
                 }
             ]
         },
