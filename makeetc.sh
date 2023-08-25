@@ -84,7 +84,7 @@ function translateFile() {
 replaceForks() {
     job=0
     threads=$1
-    sources=`find ./src | grep ".json\|.yml"`
+    sources=$(find ./src | grep ".json\|.yml")
     for eachfile in $sources
     do
         translateFile $eachfile &
