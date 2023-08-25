@@ -87,6 +87,7 @@ replaceForks() {
     sources=$(find ./src | grep ".json\|.yml")
     for eachfile in $sources
     do
+        echo "Translate: $eachfile"
         translateFile $eachfile &
         ((job += 1))
         if (( $job == $threads )); then
