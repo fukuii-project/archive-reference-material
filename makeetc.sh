@@ -35,9 +35,9 @@ function translateFile() {
         sed -i -e 's/ Merge:/ ETC_Mystique:/g' $1
         
         # Shanghai/Spiral
-        sed -i -e 's/- Shangai/- ETC_Spiral/g' $1
-        sed -i -e 's/\x27Shangai/\x27ETC_Spiral/g' $1
-        sed -i -e 's/ Shangai:/ ETC_Spiral:/g' $1
+        sed -i -e 's/- Shanghai/- ETC_Spiral/g' $1
+        sed -i -e 's/\x27Shanghai/\x27ETC_Spiral/g' $1
+        sed -i -e 's/ Shanghai:/ ETC_Spiral:/g' $1
     fi
     
     sed -i -e 's/\"Byzantium/\"ETC_Atlantis/g' $1
