@@ -140,16 +140,16 @@ coinbaseWarmAccountCallGas:
 
   expect:
     - network:
-        - '>=Shanghai'
+        - '>=ETC_Spiral'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Coinbase access post-Shanghai is warm
             0x0:  100
     - network:
-        - 'Berlin'
-        - 'London'
-        - 'Merge'
+        - 'ETC_Magneto'
+        - 'ETC_Mystique'
+        - 'ETC_Mystique'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

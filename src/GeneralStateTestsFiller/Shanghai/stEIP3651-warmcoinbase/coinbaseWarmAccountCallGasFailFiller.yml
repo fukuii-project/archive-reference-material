@@ -126,16 +126,16 @@ coinbaseWarmAccountCallGasFail:
 
   expect:
     - network:
-        - '>=Shanghai'
+        - '>=ETC_Spiral'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Coinbase access post-Shanghai is warm, hence subcall has enough gas and succeeds
             0x0:  1
     - network:
-        - 'Berlin'
-        - 'London'
-        - 'Merge'
+        - 'ETC_Magneto'
+        - 'ETC_Mystique'
+        - 'ETC_Mystique'
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:

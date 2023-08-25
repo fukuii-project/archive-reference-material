@@ -37,13 +37,13 @@ push0Gas:
         
   expect:
     - network:
-        - 'Merge'
+        - 'ETC_Mystique'
       result:
         # In Merge, PUSH0 is invalid, contract fails.
         0000000000000000000000000000000000000100:
           storage: {}
     - network:
-        - '>=Shanghai'
+        - '>=ETC_Spiral'
       result:
         0000000000000000000000000000000000000100:
           # Initial gas: 100000
