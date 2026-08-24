@@ -1,0 +1,49 @@
+[package]
+description = "Ethcore jsonrpc"
+name = "ethcore-rpc"
+version = "1.7.0"
+license = "GPL-3.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+
+[lib]
+
+[dependencies]
+futures = "0.1"
+log = "0.3"
+order-stat = "0.1"
+rustc-serialize = "0.3"
+semver = "0.6"
+serde = "0.9"
+serde_derive = "0.9"
+serde_json = "0.9"
+time = "0.1"
+transient-hashmap = "0.4"
+
+jsonrpc-core = { git = "https://github.com/paritytech/jsonrpc.git", branch = "parity-1.7" }
+jsonrpc-http-server = { git = "https://github.com/paritytech/jsonrpc.git", branch = "parity-1.7" }
+jsonrpc-ipc-server = { git = "https://github.com/paritytech/jsonrpc.git", branch = "parity-1.7" }
+jsonrpc-macros = { git = "https://github.com/paritytech/jsonrpc.git", branch = "parity-1.7" }
+
+ethcore-io = { path = "../util/io" }
+ethcore-ipc = { path = "../ipc/rpc" }
+ethcore-util = { path = "../util" }
+ethcore = { path = "../ethcore" }
+ethcrypto = { path = "../ethcrypto" }
+ethkey = { path = "../ethkey" }
+ethstore = { path = "../ethstore" }
+ethash = { path = "../ethash" }
+ethsync = { path = "../sync" }
+ethjson = { path = "../json" }
+ethcore-devtools = { path = "../devtools" }
+ethcore-light = { path = "../ethcore/light" }
+ethcore-logger = { path = "../logger" }
+parity-updater = { path = "../updater" }
+parity-reactor = { path = "../util/reactor" }
+rlp = { path = "../util/rlp" }
+fetch = { path = "../util/fetch" }
+stats = { path = "../util/stats" }
+
+clippy = { version = "0.0.103", optional = true}
+
+[features]
+dev = ["clippy", "ethcore/dev", "ethcore-util/dev", "ethsync/dev"]
