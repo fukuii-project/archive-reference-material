@@ -1,0 +1,42 @@
+# Gitlinks that live INSIDE the vendored trees.
+#
+# Each vendored repository carries its own .gitmodules, but git reads only the
+# one at the repository root -- so without these entries every reference below
+# is a dangling mode-160000 gitlink and `git submodule status` fails for the
+# WHOLE repository rather than just for those paths.
+#
+# `ignore = all` because this archive is frozen: these exist so the references
+# resolve and the tree is inspectable, not so anything fetches them. Nothing
+# here needs initialising to read the archive.
+[submodule "besu-eth/besu-etc/ethereum/referencetests/src/reference-test/external-resources"]
+	path = besu-eth/besu-etc/ethereum/referencetests/src/reference-test/external-resources
+	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "etclabscore/tests/LegacyTests"]
+	path = etclabscore/tests/LegacyTests
+	url = https://github.com/ethereum/legacytests
+	ignore = all
+[submodule "ethereumproject/go-ethereum/tests/testData"]
+	path = ethereumproject/go-ethereum/tests/testData
+	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "ethereumproject/parity/ethcore/res/ethereum/tests"]
+	path = ethereumproject/parity/ethcore/res/ethereum/tests
+	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "multi-geth/multi-geth/tests/testdata"]
+	path = multi-geth/multi-geth/tests/testdata
+	url = https://github.com/ethereum/tests
+	ignore = all
+[submodule "openethereum/parity-ethereum-dao/ethcore/res/ethereum/tests"]
+	path = openethereum/parity-ethereum-dao/ethcore/res/ethereum/tests
+	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "openethereum/parity-ethereum/ethcore/res/ethereum/tests"]
+	path = openethereum/parity-ethereum/ethcore/res/ethereum/tests
+	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "openethereum/parity-ethereum/ethcore/res/wasm-tests"]
+	path = openethereum/parity-ethereum/ethcore/res/wasm-tests
+	url = https://github.com/paritytech/wasm-tests
+	ignore = all
