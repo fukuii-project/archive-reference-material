@@ -193,16 +193,33 @@ allow-list in the same commit it is introduced or it gets no checking, which is
 the far cheaper failure.
 
 `.gitleaks.toml` allowlists the ethereum/hive DAO-fork simulators' throwaway
-bootnode key by value, because **gitleaks scans content directly and does not
-respect the `files:` filter above** -- mirrored bytes reach it regardless. A
-broader PEM-shaped sweep across this repository turned up ten other files (4
-JWT public keys, 1 PGP public key block, 1 X.509 CRL fixture, 2 Java sources
-that build a PEM string at runtime from a generated keypair with no static key
-body, and 2 binary fuzzer-corpus files carrying the dummy label "RSA TESTING
-KEY"). None needed an entry: none is private key material. `detect-private-key`
-stays scoped to the non-archive surface for the same reason -- two of those
-vendored Java files carry a PEM private-key header as a literal string constant
-and would fail that hook forever.
+bootnode key by value. **Know what that hook does and does not do, because the
+intuitive reading is wrong in both directions.** Its entry is
+`gitleaks git --pre-commit --redact --staged --verbose` with
+`pass_filenames: false`, so it scans **only the staged diff**: the `files:`
+allow-list above does not apply to it, and neither does the working tree or the
+committed history.
+
+The consequence, measured with a positive control (a planted GitHub-PAT-shaped
+string fails the hook when staged and passes when merely present unstaged):
+
+- **In CI it scans nothing at all.** `pre-commit run --all-files` on a fresh
+  checkout has an empty index-versus-HEAD diff, so gitleaks has no input. Do not
+  read a green CI run as evidence that this repository has been scanned for
+  secrets.
+- **Already-committed vendored bytes never reach it**, because they are never
+  staged again.
+- **The one moment it matters is `git subtree add`**, which stages a whole new
+  corpus in one go. That is when the bootnode-key entry earns its place, and why
+  it stays.
+
+A manual PEM-shaped sweep across this repository turned up ten files (4 JWT
+public keys, 1 PGP public key block, 1 X.509 CRL fixture, 2 Java sources that
+build a PEM string at runtime from a generated keypair with no static key body,
+and 2 binary fuzzer-corpus files carrying the dummy label "RSA TESTING KEY").
+None is private key material. `detect-private-key` stays scoped to the
+non-archive surface regardless: two of those vendored Java files carry a PEM
+private-key header as a literal string constant and would fail it forever.
 
 ### Before adding a corpus: check blob sizes by hand
 

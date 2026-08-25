@@ -27,9 +27,19 @@ paths = [
 # the scanner to a genuine key arriving in a fixture later. This lets exactly this
 # known value through and keeps scanning everything else.
 #
-# NOTE: gitleaks scans the staged diff directly, so pre-commit's `files:`
-# allowlist in .pre-commit-config.yaml does NOT filter it. Mirrored content
-# reaches this scanner regardless of that config.
+# NOTE: this hook runs `gitleaks git --pre-commit --redact --staged` with
+# pass_filenames: false, so it scans ONLY the staged diff. The `files:`
+# allow-list in .pre-commit-config.yaml does not apply to it -- but neither
+# does the working tree, nor the committed history. Verified with a positive
+# control: a planted GitHub-PAT-shaped string fails this hook when staged and
+# passes when merely present unstaged.
+#
+# Two consequences worth stating, because the intuitive reading is wrong both
+# ways: in CI it scans NOTHING (a fresh checkout has an empty staged diff, so
+# a green run is not evidence this repository was scanned), and already-
+# committed mirrored bytes never reach it either. The entry below matters at
+# exactly one moment -- `git subtree add`, which stages a whole new corpus in
+# a single commit. That is why it stays.
 #
 # Everything else this project's own review turned up under a broad PEM sweep
 # (10 files under a bare "-----BEGIN" search: 4 Besu JWT PUBLIC keys, 1 PGP
