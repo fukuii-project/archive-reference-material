@@ -1,0 +1,51 @@
+# gitleaks config for fukuii-project repos.
+# Extends the built-in ruleset; add repo-specific allowlist entries below.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "fukuii-project baseline allowlist"
+paths = [
+  '''\.env\.example$''',
+  '''\.env\..*\.example$''',
+  '''.*\.tfvars\.example$''',
+]
+# Mirrored corpora: a hive test-harness bootnode key, public upstream since 2016.
+#
+# ethereum/hive's DAO-fork simulators start a throwaway bootnode inside an
+# ephemeral Docker container so test clients can discover each other. The key is
+# that container's network identity for the length of one test run. It secures no
+# account, no funds and no service, and it has been published in a public
+# repository for roughly a decade. It appears in 6 files here, under
+# ethereum/hive/simulators/ and etclabscore/hive/simulators/ -- the same value
+# fukuii-tests already allowlists, because fukuii-tests mounts this repository as
+# its archive/ submodule and inherits the identical bytes.
+#
+# Allowlisted by VALUE, not by path, deliberately. The files are byte-identical
+# mirrors and editing them to satisfy a scanner would destroy the property that
+# makes a mirror worth keeping -- but allowlisting a whole directory would blind
+# the scanner to a genuine key arriving in a fixture later. This lets exactly this
+# known value through and keeps scanning everything else.
+#
+# NOTE: gitleaks scans the staged diff directly, so pre-commit's `files:`
+# allowlist in .pre-commit-config.yaml does NOT filter it. Mirrored content
+# reaches this scanner regardless of that config.
+#
+# Everything else this project's own review turned up under a broad PEM sweep
+# (10 files under a bare "-----BEGIN" search: 4 Besu JWT PUBLIC keys, 1 PGP
+# PUBLIC key block in openethereum/parity-ethereum/SECURITY.md, 1 X.509 CRL test
+# fixture, 2 Besu Java source files that build a PEM buffer at runtime from a
+# dynamically-generated keypair with no static key body in source, and 2 binary
+# fuzzer seed-corpus files in multi-geth/multi-geth containing the well-known
+# dummy label "RSA TESTING KEY") needs no entry here. None of them is private
+# key material, and none of the shapes involved -- a public-key marker, a CRL
+# marker, source code with no embedded base64 body, or bytes gitleaks does not
+# scan because they are binary -- is a shape gitleaks' default private-key rule
+# actually matches. See NOTICE and AGENTS.md for the full accounting.
+regexes = [
+  '''5ce1f6fc42c817c38939498ee7fcdd9a06fa9d947d02d42dfe814406f370c4eb''',
+  '''__set_me__''',
+  '''__password__''',
+  '''__generate_a_random_secret__''',
+  '''__never_a_real_key_here__''',
+]

@@ -1,0 +1,22 @@
+# Thin caller → the org-wide reusable checks (gitleaks + zizmor + actionlint + hygiene).
+# The logic lives once in fukuii-project/.github; bump the SHA below to pick up a change there.
+#
+# NOTE (supply-chain, Rule 7 (supply-chain-security.md)): pinned to a commit SHA rather than
+# @main — fukuii-project/.github's main has no branch protection and no tags (verified live via
+# the GitHub API, 2026-08-24), so an unpinned ref here would let anyone with push access to that
+# repo change what this repo's CI runs, unreviewed. To bump: resolve the new SHA (gh api
+# repos/fukuii-project/.github/commits/main --jq .sha), review the diff at that commit, then
+# update both the SHA below and this comment's date.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    uses: fukuii-project/.github/.github/workflows/checks.yml@6cf26cc14724b0840d7d08ec87774c14b8d8348f # main @ 2026-08-24

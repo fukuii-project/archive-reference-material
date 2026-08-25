@@ -1,0 +1,35 @@
+# Dependabot version updates are deliberately OFF for this repository.
+#
+# This repository is an archive: every vendored tree is frozen by design (see
+# AGENTS.md's "The freeze rule") and nothing in it is meant to be kept current,
+# so a dependency-update robot has no legitimate job here.
+#
+# open-pull-requests-limit: 0 holds version updates off while keeping a
+# configured, commented file exactly where a reader looks for Dependabot config.
+# `updates:` is a required key with no documented empty form, so the entry below
+# names the one ecosystem this tree actually holds -- github-actions, via
+# .github/workflows/ci.yml's `uses:` reference.
+#
+# The cooldown block gates nothing at a zero limit. It is here because this
+# repository's CI runs zizmor, whose `dependabot-cooldown` audit inspects every
+# entry under `updates:` regardless of open-pull-requests-limit. Measured both
+# ways: without it the check fails (exit 13, one medium finding); with it the
+# full hook set passes. A visible line a reviewer can evaluate, not a hidden
+# ignore comment.
+#
+# No semver-major-days: GitHub's cooldown support table lists GitHub Actions as
+# "Default days supported / SemVer-bump days NOT supported".
+#
+# This does not touch security-update pull requests, which are a
+# repository-level GitHub setting with no key in this file at all -- read the
+# live setting with `gh api`, never infer it from this file's presence,
+# absence, or content.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    cooldown:
+      default-days: 7
