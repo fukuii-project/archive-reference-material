@@ -1,6 +1,20 @@
-# Pre-commit hooks for fukuii-project repos.
+# Pre-commit hooks for this repository.
 #   install:  pipx install pre-commit && pre-commit install
 #   run all:  pre-commit run --all-files
+#
+# NO HOOK HERE MAY MODIFY A FILE. This repository is a preservation target: its
+# value is that its bytes are exactly what upstream published, and a conformance
+# vector's bytes ARE its meaning. Every hook below is read-only -- it reports,
+# it never rewrites.
+#
+# `end-of-file-fixer`, `trailing-whitespace` and `mixed-line-ending` were
+# present here and have been REMOVED. They rewrite files, and the risk is not
+# theoretical: end-of-file-fixer stripped a trailing blank line from
+# PROVENANCE.md during the wiring pass that introduced it, and the same hook
+# appended a newline to 6,985 mirrored fixtures in a sibling repository on
+# 2026-08-21. Do not reintroduce them, or any other formatter, at any scope.
+# Scoping is a path-keyed guard, and a path-keyed guard fails silently when
+# paths move; not installing the hook cannot fail that way.
 #
 # NOTE (supply-chain policy): the `rev:` pins below are the local secret-scan /
 # hygiene toolchain. Verify and bump them deliberately before first use, and
@@ -86,8 +100,5 @@ repos:
       - id: check-added-large-files
         args: ["--maxkb=1024"]
       - id: check-merge-conflict
-      - id: end-of-file-fixer
-      - id: trailing-whitespace
       - id: check-yaml
       - id: check-json
-      - id: mixed-line-ending

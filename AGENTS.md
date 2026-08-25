@@ -132,33 +132,94 @@ repository-level GitHub setting with no key in `.github/dependabot.yml` at all.
 Read the live setting with `gh api`; never infer it from this file's presence,
 absence, or content.
 
+## Security advisories against the vendored trees: expected, and not to be fixed
+
+**This repository raises a large and permanent number of dependency security
+alerts, and none of them is a defect to fix here.** Measured 2026-08-25: 385
+open alerts, 60 critical, 117 high, 174 medium, 34 low, across 49 manifests --
+every one of them inside a vendored tree (`ethereumproject/parity`,
+`openethereum/parity-ethereum`, `ethereum/hive`, `multi-geth/multi-geth`,
+`ethereumproject/go-ethereum`, `openethereum/parity-ethereum-dao`). They are
+real advisories against real dependencies of clients that stopped shipping
+years ago.
+
+**Do not patch them.** Bumping a dependency inside a vendored tree destroys the
+one property that makes a copy of a dead corpus worth holding: that it can be
+compared against what upstream published. The freeze rule in this file governs,
+and it governs here specifically because this is the case where breaking it
+feels most justified. An advisory on a frozen mirror is a fact about what
+upstream shipped, not a task.
+
+**Nothing this repository can configure turns them off.** They come from
+Dependabot *alerts*, which are a repository-level GitHub setting fed by an
+organization security configuration -- not from `.github/dependabot.yml`, which
+governs only version-update pull requests and is already held at a zero limit.
+Read the live state rather than inferring it from any file here:
+
+```sh
+gh api repos/<owner>/<repo>/automated-security-fixes    # {"enabled":…,"paused":…}
+gh api repos/<owner>/<repo>/vulnerability-alerts        # 204 enabled, 404 not
+gh api repos/<owner>/<repo>/code-security-configuration # the org config, if enforced
+```
+
+Turning them off is an organization-level change, made by exempting this
+repository from the enforced configuration. That is an outward-facing settings
+decision and belongs to whoever owns the organization, not to a contributor or
+an agent working in this tree. Until then the alerts stand, and the correct
+disposition for each is dismissal as "used in tests" or "won't fix", never a
+commit.
+
 ## Pre-commit and secret scanning
 
-`.pre-commit-config.yaml` scopes every hygiene and formatting hook to this
-repository's own small, non-archive surface via a top-level `files:`
-allow-list, inverted from `fukuii-tests`' single-path `exclude: archive/` on
-purpose — here the archive is not a fraction of the tree, it *is* the tree.
-The file's own header comment carries the full reasoning, including why the
-inversion means a **new vendored organization directory needs no config
-update to stay protected**, unlike a deny-list keyed on today's six. That
-inversion is not free: a *new, non-archive root file* needs adding to the
-allow-list in the same commit it is introduced, or it silently gets no
-hygiene checking — a far cheaper failure than the one the design avoids.
+**No tool configured in this repository may modify a file.** Everything here is
+a preservation target whose value is that its bytes are exactly what upstream
+published. `.pre-commit-config.yaml` therefore carries read-only hooks only:
+they report, they never rewrite. The three file-rewriting hooks that a general
+-purpose configuration normally includes -- `end-of-file-fixer`,
+`trailing-whitespace`, `mixed-line-ending` -- were present here and have been
+removed. **Do not reintroduce them, or any other formatter, at any scope.**
+Scoping a formatter is a path-keyed guard, and a path-keyed guard fails
+silently when paths move; not installing it cannot fail that way. The risk is
+measured, not hypothetical: `end-of-file-fixer` stripped a line from
+`PROVENANCE.md` during the very pass that introduced it.
+
+Hooks are additionally scoped to this repository's own small non-archive
+surface by a top-level `files:` allow-list, inverted from the usual
+`exclude:`-the-archive pattern on purpose: here the archive is not a fraction
+of the tree, it *is* the tree, so **a new vendored organization directory is
+out of scope automatically, with no config edit.** The cost of that inversion
+is the opposite case: a new *non-archive root file* must be added to the
+allow-list in the same commit it is introduced or it gets no checking, which is
+the far cheaper failure.
 
 `.gitleaks.toml` allowlists the ethereum/hive DAO-fork simulators' throwaway
-bootnode key by value (the same value `fukuii-tests` already allowlists,
-since `fukuii-tests` mounts this repository and inherits the identical
-bytes), because **gitleaks scans the staged diff directly and does not
-respect `.pre-commit-config.yaml`'s `files:` filter** — mirrored content
-reaches gitleaks regardless of the pre-commit scoping above. A broader sweep
-for PEM-shaped content across this repository turned up ten other files (4
-Besu JWT public keys, 1 PGP public key block, 1 X.509 CRL fixture, 2 Besu
-Java sources that build a PEM string at runtime from a dynamically generated
-keypair with no static key body in source, and 2 binary fuzzer-corpus files
-carrying the well-known dummy label "RSA TESTING KEY"); none needed an
-allowlist entry, because none is private key material and none matches the
-shape gitleaks' default private-key rule actually looks for. `NOTICE` and
-`.gitleaks.toml`'s own comments carry the full accounting and the file paths.
+bootnode key by value, because **gitleaks scans content directly and does not
+respect the `files:` filter above** -- mirrored bytes reach it regardless. A
+broader PEM-shaped sweep across this repository turned up ten other files (4
+JWT public keys, 1 PGP public key block, 1 X.509 CRL fixture, 2 Java sources
+that build a PEM string at runtime from a generated keypair with no static key
+body, and 2 binary fuzzer-corpus files carrying the dummy label "RSA TESTING
+KEY"). None needed an entry: none is private key material. `detect-private-key`
+stays scoped to the non-archive surface for the same reason -- two of those
+vendored Java files carry a PEM private-key header as a literal string constant
+and would fail that hook forever.
+
+### Before adding a corpus: check blob sizes by hand
+
+No hook does this, deliberately, because a size limit tight enough to be useful
+against a runaway blob would also block legitimate multi-megabyte fixtures.
+**Grafted history is permanent: a single file over GitHub's 100 MiB hard limit
+makes this repository unpushable forever.** Check before you add, not after:
+
+```sh
+git rev-list --objects <new-ref> \
+  | git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' \
+  | awk '$1=="blob" && $2>104857600'
+```
+
+Empty output is the pass. Calibrate it against a lower threshold first, so you
+know the check can report a hit at all. The largest blob currently here is
+62.0 MiB.
 
 ## License and NOTICE
 
