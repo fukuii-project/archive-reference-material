@@ -47,14 +47,13 @@ do not copy from it.
 
 There is no `package.json`, `build.sbt`, `Cargo.toml`, `go.mod`, or
 `pyproject.toml` at this repository's own root, and no lockfile of any
-ecosystem. This repository is Markdown (three frozen root docs plus this
-wiring), one frozen data file (`.gitmodules`), and six vendored organization
+ecosystem. This repository is Markdown (the frozen root docs plus this
+wiring), one frozen data file (`.gitmodules`), and the vendored organization
 directories. **Do not invent a call to a build, test, or lint command for
 this repository's own tree** — none exists here to run.
 
-The vendored trees inside `besu-eth/`, `ethereumproject/`, `openethereum/`,
-`multi-geth/` and `ethereum/` carry their own build files (Gradle, Makefiles,
-Cargo manifests, and so on), because they are complete, real client
+The vendored trees carry their own build files (Gradle, Makefiles, Cargo
+manifests, and so on), because they are complete, real upstream
 repositories. **None of them is ever built, tested, or invoked from this
 repository.** They are frozen source material, read for their content, not
 executed.
@@ -101,6 +100,34 @@ pattern `ethereum/EXTRACTION.md` and the "Extractions" section of
 deprecated. It is the live production client with at least one more Olympia
 release planned, so today it fails this directory's own test: what
 disappears if the upstream vanishes tomorrow. Do not vendor it preemptively.
+
+## Figures in these documents must not rot
+
+**Never state a count of what is here, a total size, or a list of the
+organization directories.** Every one of those is wrong the moment something is
+added, and nothing re-reads a document when the tree changes — so a stale figure
+keeps reading as authoritative and answering confidently. This has already
+happened once: "six vendored organization directories" survived into a pass that
+made it nine.
+
+State the invariant and name the instrument instead:
+
+| instead of | write |
+|---|---|
+| "the six vendored organization directories" | "the vendored organization directories", and `git ls-tree --name-only HEAD` |
+| "the archive is 1.8 GB" | nothing; the reader can measure it |
+| "the largest blob is 62.0 MiB" | the command that finds the largest |
+| "eleven clients are vendored" | nothing, or read `PROVENANCE.md` |
+
+**One exception, and it is the opposite case: a per-entry measurement taken at a
+named, frozen ref never rots.** `PROVENANCE.md`'s `| contents | 1,439 files ·
+329 MB |` describes a tree that cannot change, and its `**Totals:**` lines are
+scoped to a single dated vendoring pass. Those are dated facts, not current-state
+claims. Keep them, and keep writing them for new entries.
+
+The test is simple: **would adding a corpus tomorrow make this sentence false?**
+If yes, it does not belong in a document. If it describes a frozen ref, it is
+safe forever.
 
 ## Verification is by TREE HASH, never by diff
 
@@ -250,8 +277,15 @@ git rev-list --objects <new-ref> \
 ```
 
 Empty output is the pass. Calibrate it against a lower threshold first, so you
-know the check can report a hit at all. The largest blob currently here is
-62.0 MiB.
+know the check can report a hit at all — swap `104857600` for `1048576` and
+confirm it reports something. To see what the current largest actually is,
+measure it rather than trusting a number written down anywhere:
+
+```sh
+git rev-list --objects HEAD \
+  | git cat-file --batch-check='%(objecttype) %(objectsize) %(rest)' \
+  | awk '$1=="blob"' | sort -k2 -nr | head -3
+```
 
 ## License and NOTICE
 
