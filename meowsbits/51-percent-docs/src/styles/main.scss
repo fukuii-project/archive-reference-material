@@ -1,0 +1,173 @@
+@import 'reset.scss';
+@import 'prismjs/themes/prism.css';
+@import 'tocbot/src/scss/tocbot';
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  //background: none !important;
+  background: #f5f4fd !important;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+//// usage
+//.my-box {
+//  padding: 10px;
+//
+//  @include for-desktop-up {
+//    padding: 20px;
+//  }
+//}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  //@include for-phone-only {
+  //  grid-template-columns: 1fr;
+  //}
+  //@include for-tablet-portrait-up {
+  //  grid-template-columns: 1fr 2fr 1fr;
+  //}
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  line-height: 23px;
+
+  & > * {
+    grid-column: 2 / -2;
+  }
+
+  header {
+    //grid-column: 1 / -1;
+    // Photo by Karsten Würth (@inf1783) on Unsplash
+    //background: #fdbc9a url('../../public/assets/images/venice-italy.jpg')
+    //  no-repeat center;
+    background-size: cover;
+    //height: 50px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 20px;
+    //display: flex;
+    //justify-content: start;
+    //align-items: center;
+    //text-align: left;
+
+    h1 {
+      font-size: 1.5rem;
+      //font-weight: normal;
+      //padding-right: 0rem;
+      //margin: 0;
+      //padding: 0;
+    }
+    #mess-deactivation-notice {
+      background: yellow;
+      padding: 0.5rem 1.0rem 0.5rem 1.0rem;
+    }
+  }
+
+  footer {
+    //border-top: 1px solid #ccc;
+    //padding-top: 2rem;
+    //margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+hr {
+  color: #ddd;
+  margin: 5rem;
+}
+
+
+span.number {
+  &.positive {
+    color: inherit;
+  }
+  &.negative {
+    color: darkred;
+  }
+}
+
+blockquote {
+  border-left: 4px solid darken(#f5f4fd, 10);
+  background-color: #f5f4fd;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  //color: #36367d;
+}
+
+.q {
+  background-color: #f5f4fd;
+  text-decoration: 2px underline darken(#f5f4fd, 10);
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+  background-color: #fbeef6;
+  color: #3a0000;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+table {
+  margin-top: 2rem;
+}
+td {
+  border-top: 1px solid gray;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+th {
+  //border-bottom: 1px solid gray;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+tr.header {
+  text-align: left;
+}
+
+.modest {
+  font-size: small;
+  line-height: 1.6;
+  color: lighten(#222, 10)
+}
+
+.confirmation-estimator-tool {
+  border: 1px dashed darkred;
+  background-color: #fffafa;
+    padding: 0.5rem 1rem;
+  line-height: 1.8rem;
+}
+
+.my-position-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

@@ -1,0 +1,174 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Data Getter
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron: '4 2 * * *'
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v14.17.2
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      # Runs a set of commands using the runners shell
+      - name: Fetch and interpolate the data
+        env:
+          COINAPI_API_KEY: ${{ secrets.COINAPI_API_KEY }}
+          RIVET_API_KEY: ${{ secrets.RIVET_API_KEY }}
+        run: |
+          mkdir -p data
+          if curl "https://rest.coinapi.io/v1/exchangerate/ETC/USD?apikey=${COINAPI_API_KEY}" > public/assets/data/exchange_rates.json.tmp; then
+            mv public/assets/data/exchange_rates.json.tmp public/assets/data/exchange_rates.json
+          else
+            echo "Failed to fetch exchange rates"
+            exit 1
+          fi
+
+          
+          if curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "id": 1, "method": "eth_getBlockByNumber", "params": ["latest", false]}' https://${RIVET_API_KEY}.etc.rpc.rivet.cloud > public/assets/data/rivet_etc_latest_block.json.tmp; then
+            mv public/assets/data/rivet_etc_latest_block.json.tmp public/assets/data/rivet_etc_latest_block.json
+          else
+            echo "Failed to fetch latest block"
+            exit 1
+          fi
+          
+          
+          if curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "id": 1, "method": "eth_getBlockByNumber", "params": ["latest", false]}' https://${RIVET_API_KEY}.eth.rpc.rivet.cloud > public/assets/data/rivet_eth_latest_block.json.tmp; then
+            mv public/assets/data/rivet_eth_latest_block.json.tmp public/assets/data/rivet_eth_latest_block.json
+          else
+            echo "Failed to fetch latest block"
+            exit 1
+          fi
+          
+          if curl 'https://whattomine.com/coins.json?eth=true&factor%5Beth_hr%5D=0.0&factor%5Beth_p%5D=0.0&e4g=true&factor%5Be4g_hr%5D=0.0&factor%5Be4g_p%5D=0.0&factor%5Bzh_hr%5D=0.0&factor%5Bzh_p%5D=0.0&factor%5Bcnh_hr%5D=0.0&factor%5Bcnh_p%5D=0.0&factor%5Bcng_hr%5D=0.0&factor%5Bcng_p%5D=0.0&factor%5Bcnf_hr%5D=0.0&factor%5Bcnf_p%5D=0.0&factor%5Bcx_hr%5D=0.0&factor%5Bcx_p%5D=0.0&factor%5Beqa_hr%5D=0.0&factor%5Beqa_p%5D=0.0&factor%5Bcc_hr%5D=0.0&factor%5Bcc_p%5D=0.0&factor%5Bcr29_hr%5D=0.0&factor%5Bcr29_p%5D=0.0&factor%5Bct31_hr%5D=0.0&factor%5Bct31_p%5D=0.0&factor%5Bct32_hr%5D=0.0&factor%5Bct32_p%5D=0.0&factor%5Beqb_hr%5D=0.0&factor%5Beqb_p%5D=0.0&factor%5Brmx_hr%5D=0.0&factor%5Brmx_p%5D=0.0&factor%5Bns_hr%5D=0.0&factor%5Bns_p%5D=0.0&factor%5Bal_hr%5D=0.0&factor%5Bal_p%5D=0.0&factor%5Bops_hr%5D=0.0&factor%5Bops_p%5D=0.0&factor%5Beqz_hr%5D=0.0&factor%5Beqz_p%5D=0.0&factor%5Bzlh_hr%5D=0.0&factor%5Bzlh_p%5D=0.0&factor%5Bkpw_hr%5D=0.0&factor%5Bkpw_p%5D=0.0&factor%5Bppw_hr%5D=0.0&factor%5Bppw_p%5D=0.0&factor%5Bx25x_hr%5D=0.0&factor%5Bx25x_p%5D=0.0&factor%5Bfpw_hr%5D=0.0&factor%5Bfpw_p%5D=0.0&factor%5Bvh_hr%5D=0.0&factor%5Bvh_p%5D=0.0&factor%5Bcost%5D=0.1&factor%5Bcost_currency%5D=USD&sort=Profitability24&volume=0&revenue=24h&factor%5Bexchanges%5D%5B%5D=&factor%5Bexchanges%5D%5B%5D=binance&factor%5Bexchanges%5D%5B%5D=bitfinex&factor%5Bexchanges%5D%5B%5D=bitforex&factor%5Bexchanges%5D%5B%5D=bittrex&factor%5Bexchanges%5D%5B%5D=coinex&factor%5Bexchanges%5D%5B%5D=dove&factor%5Bexchanges%5D%5B%5D=exmo&factor%5Bexchanges%5D%5B%5D=gate&factor%5Bexchanges%5D%5B%5D=graviex&factor%5Bexchanges%5D%5B%5D=hitbtc&factor%5Bexchanges%5D%5B%5D=hotbit&factor%5Bexchanges%5D%5B%5D=ogre&factor%5Bexchanges%5D%5B%5D=poloniex&factor%5Bexchanges%5D%5B%5D=stex&dataset=Main' > public/assets/data/whattomine_gpu.json.tmp; then
+            mv public/assets/data/whattomine_gpu.json.tmp public/assets/data/whattomine_gpu.json
+          else
+            echo "Failed to fetch whattomine gpu data"
+            exit 1
+          fi
+
+      - run: yarn
+      - run: yarn build
+
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          # The arguments for the `git add` command (see the paragraph below for more info)
+          # Default: '.'
+          add: '.'
+
+          # The name of the user that will be displayed as the author of the commit.
+          # Default: depends on the default_author input
+          author_name: Robo Meows
+
+          # The email of the user that will be displayed as the author of the commit.
+          # Default: depends on the default_author input
+          author_email: b5c6@protonmail.com
+
+          # Additional arguments for the git commit command. The --message argument is already set by the message input.
+          # Default: ''
+          commit: --signoff
+
+          # The name of the custom committer you want to use, if different from the author of the commit.
+          # Default: the name of the author (set with either author_name or default_author)
+          committer_name: Robo Meows
+
+          # The email of the custom committer you want to use, if different from the author of the commit.
+          # Default: the email of the author (set with either author_email or default_author)
+          committer_email: b5c6@protonmail.com
+
+          # The local path to the directory where your repository is located. You should use actions/checkout first to set it up.
+          # Default: '.'
+          cwd: '.'
+
+          # Determines the way the action fills missing author name and email. Three options are available:
+          # - github_actor -> UserName <UserName@users.noreply.github.com>
+          # - user_info -> Your Display Name <your-actual@email.com>
+          # - github_actions -> github-actions <email associated with the github logo>
+          # Default: github_actor
+          default_author: github_actor
+
+          # The message for the commit.
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: 'auto-committed exchange rate data'
+
+          # If this input is set, the action will push the commit to a new branch with this name.
+          # Default: ''
+#           new_branch: gh-pages
+
+          # The way the action should handle pathspec errors from the add and remove commands. Three options are available:
+          # - ignore -> errors will be logged but the step won't fail
+          # - exitImmediately -> the action will stop right away, and the step will fail
+          # - exitAtEnd -> the action will go on, every pathspec error will be logged at the end, the step will fail.
+          # Default: ignore
+          pathspec_error_handling: ignore
+
+          # Arguments for the git pull command. By default, the action does not pull.
+          # Default: ''
+#           pull: '--rebase --autostash ...'
+
+          # Whether to push the commit and, if any, its tags to the repo. It can also be used to set the git push arguments (see the paragraph below for more info)
+          # Default: true
+          push: true
+
+          # The arguments for the `git rm` command (see the paragraph below for more info)
+          # Default: ''
+#           remove: './dir/old_file.js'
+
+          # Arguments for the git tag command (the tag name always needs to be the first word not preceded by an hyphen)
+          # Default: ''
+#           tag: 'v1.0.0 --force'
+
+          # Arguments for the git push --tags command (any additional argument will be added after --tags)
+          # Default: ''
+#           tag_push: '--force'
+
+      - uses: actions/upload-pages-artifact@main
+        with:
+          path: public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
