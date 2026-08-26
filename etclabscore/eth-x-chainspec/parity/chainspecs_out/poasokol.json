@@ -1,0 +1,174 @@
+{
+     "name": "POA Sokol",
+     "dataDir": "poasokol",
+     "engine": {
+          "authorityRound": {
+               "params": {
+                    "stepDuration": "0x5",
+                    "blockReward": "0xde0b6b3a7640000",
+                    "validators": {
+                         "multi": {
+                              "0": {
+                                   "safeContract": "0x8bf38d4764929064f2d4d3a56520a76ab3df415b"
+                              },
+                              "362296": {
+                                   "safeContract": "0xf5ce3f5d0366d6ec551c74ccb1f67e91c56f2e34"
+                              },
+                              "4622420": {
+                                   "safeContract": "0x4c6a159659cccb033f4b2e2be0c16acc62b89ddb"
+                              },
+                              "509355": {
+                                   "safeContract": "0x03048f666359cfd3c74a1a5b9a97848bf71d5038"
+                              }
+                         }
+                    },
+                    "validateScoreTransition": null,
+                    "validateStepTransition": null,
+                    "maximumUncleCount": "0x0"
+               }
+          }
+     },
+     "params": {
+          "maximumExtraDataSize": "0x20",
+          "minGasLimit": "0x1388",
+          "networkID": "0x4d",
+          "eip140Transition": "0x0",
+          "eip145Transition": "0x62a32c",
+          "eip211Transition": "0x0",
+          "eip214Transition": "0x0",
+          "eip658Transition": "0x0",
+          "eip1014Transition": "0x62a32c",
+          "eip1052Transition": "0x62a32c",
+          "eip1283Transition": "0x62a32c",
+          "eip1283DisableTransition": "0x6b36e0",
+          "gasLimitBoundDivisor": "0x400"
+     },
+     "genesis": {
+          "seal": {
+               "ethereum": {
+                    "nonce": "0x0000000000000000",
+                    "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+               }
+          },
+          "difficulty": "0x20000",
+          "author": null,
+          "timestamp": null,
+          "parentHash": null,
+          "extraData": "0x",
+          "gasLimit": "0x663be0",
+          "gasUsed": null,
+          "stateRoot": null
+     },
+     "accounts": {
+          "0000000000000000000000000000000000000005": {
+               "builtin": {
+                    "name": "modexp",
+                    "pricing": {
+                         "modexp": {
+                              "divisor": 20
+                         }
+                    },
+                    "activate_at": "0x0"
+               }
+          },
+          "0000000000000000000000000000000000000006": {
+               "builtin": {
+                    "name": "alt_bn128_add",
+                    "pricing": {
+                         "linear": {
+                              "base": 500,
+                              "word": 0
+                         }
+                    },
+                    "activate_at": "0x0"
+               }
+          },
+          "0000000000000000000000000000000000000007": {
+               "builtin": {
+                    "name": "alt_bn128_mul",
+                    "pricing": {
+                         "linear": {
+                              "base": 40000,
+                              "word": 0
+                         }
+                    },
+                    "activate_at": "0x0"
+               }
+          },
+          "0000000000000000000000000000000000000008": {
+               "builtin": {
+                    "name": "alt_bn128_pairing",
+                    "pricing": {
+                         "alt_bn128_pairing": {
+                              "base": 100000,
+                              "pair": 80000
+                         }
+                    },
+                    "activate_at": "0x0"
+               }
+          },
+          "0x0000000000000000000000000000000000000001": {
+               "balance": "1",
+               "builtin": {
+                    "name": "ecrecover",
+                    "pricing": {
+                         "linear": {
+                              "base": 3000,
+                              "word": 0
+                         }
+                    }
+               }
+          },
+          "0x0000000000000000000000000000000000000002": {
+               "balance": "1",
+               "builtin": {
+                    "name": "sha256",
+                    "pricing": {
+                         "linear": {
+                              "base": 60,
+                              "word": 12
+                         }
+                    }
+               }
+          },
+          "0x0000000000000000000000000000000000000003": {
+               "balance": "1",
+               "builtin": {
+                    "name": "ripemd160",
+                    "pricing": {
+                         "linear": {
+                              "base": 600,
+                              "word": 120
+                         }
+                    }
+               }
+          },
+          "0x0000000000000000000000000000000000000004": {
+               "balance": "1",
+               "builtin": {
+                    "name": "identity",
+                    "pricing": {
+                         "linear": {
+                              "base": 15,
+                              "word": 3
+                         }
+                    }
+               }
+          },
+          "0x8bf38d4764929064f2d4d3a56520a76ab3df415b": {
+               "balance": "1"
+          },
+          "0xe8ddc5c7a2d2f0d7a9798459c0104fdf5e987aca": {
+               "balance": "252460800000000000000000000"
+          }
+     },
+     "nodes": [
+          "enode://8e0af07c86ec36590bb6368e7ad0c45b6dc658f5fb66ec68889a614affddda5e021bd513bcf4fb2fae4a3bbe08cf0de84f037cd58478a89665dfce1ded2595c7@34.236.37.74:30303",
+          "enode://f1a5100a81cb73163ae450c584d06b1f644aa4fad4486c6aeb4c384b343c54bb66c744aa5f133af66ea1b25f0f4a454f04878f3e96ee4cd2390c047396d6357b@209.97.158.4:30303",
+          "enode://0d1e0372f63a3f0b82d66635ea101ecc0f6797788a078805cc933dd93e6a22f7c9fa51ab4e2d21da02d04480ef19f3bbb9a2b41dd1c262085d295a354bb8b0f9@18.217.47.209:30303",
+          "enode://ab083db73da15b3995ac9c68035cdb32901835a823cb848fccb672e43dd21f14428706118d6fe5b921d8e741f122f35aad0255bc86807b1d17bcfa1e86e40a14@165.227.37.104:30303",
+          "enode://8e0af07c86ec36590bb6368e7ad0c45b6dc658f5fb66ec68889a614affddda5e021bd513bcf4fb2fae4a3bbe08cf0de84f037cd58478a89665dfce1ded2595c7@34.236.37.74:30303",
+          "enode://182ee200ca134dc4d6390f3d5aadbcd80df0f7f24335830335d142573eacce4eeb919d30e82c5df588034e167e6ba6dd11187502ac9264a71005127f6b146a99@159.203.95.241:30303",
+          "enode://b022ff70b5fcaf9596ae5efed99a8198b4ae0578ee9d17b733609d803a75cef95d3a2a18e50dca9a7c3b26139f158c59eaf8b5fb8d1d331c9a46934a78acabe8@206.189.76.128:30303"
+     ]
+}
