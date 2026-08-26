@@ -70,12 +70,27 @@ substitution, among others). Fix nothing here; a correction belongs in the
 Fukuii suite (`fukuii-tests/proposals/` and `fukuii-tests/networks/`), built
 from this material as source, never by editing it in place.
 
-The same freeze reaches four specific files that are *not* vendored bytes but
-are still not this wiring pass's or any later agent's to edit: `README.md`,
-`PROVENANCE.md`, `EXTRACTION-historic-clients.md`, and
-`ethereum/EXTRACTION.md`. They are this project's own authored documentation
-and are already correct; a later session finding something that looks wrong
-in them reports it rather than changing it.
+The same freeze reaches specific files that are *not* vendored bytes but are
+still not this wiring pass's or any later agent's to rewrite: `README.md`,
+`PROVENANCE.md`, `EXTRACTION-historic-clients.md`, `ethereum/EXTRACTION.md`,
+and `meowsbits/EXTRACTION.md`. They are this project's own authored
+documentation and are already correct; a later session finding something that
+looks wrong in them reports it rather than changing it.
+
+**Editing an existing entry and appending a new one are different acts, and
+only the first is frozen.** Recording a new corpus in `PROVENANCE.md` and
+`NOTICE` is the documented path for an addition, not a violation of the rule
+above: "adding to the archive is expected" is meaningless if the record of
+what was added cannot grow. Append; never revise what is already there. Prove
+it afterward rather than asserting it, by confirming the previously committed
+lines are byte-identical and still in order:
+
+```sh
+OLD=$(git show HEAD:PROVENANCE.md | wc -l)
+diff <(git show HEAD:PROVENANCE.md) <(head -n "$OLD" PROVENANCE.md)
+```
+
+Empty output is the pass.
 
 **Adding to the archive is expected; changing it is not.** When an upstream
 deletes something else, extract it here and record the refs, following the
@@ -283,10 +298,13 @@ boundary regardless of where a commit lands.
   `ethereumproject/`, `multi-geth/`, `openethereum/`): frozen. No edits, no
   reformatting, no reorganizing, no new files inside an existing vendored
   repository's own tree.
-- **`README.md`, `PROVENANCE.md`, `EXTRACTION-historic-clients.md`,
-  `ethereum/EXTRACTION.md`, `.gitmodules`**: this project's own authored
-  documents and hand-maintained gitlink map, already correct, frozen the same
-  as the vendored bytes they describe.
+- **`README.md`, `EXTRACTION-historic-clients.md`, `.gitmodules`**: this
+  project's own authored documents and hand-maintained gitlink map, already
+  correct, frozen the same as the vendored bytes they describe.
+- **`PROVENANCE.md`, `NOTICE`, `ethereum/EXTRACTION.md`,
+  `meowsbits/EXTRACTION.md`**: existing entries are frozen; **appending a new
+  entry for newly added material is expected** and is how an addition is
+  recorded. See "The freeze rule" for the append-only proof.
 - **`core-geth`**: deliberately absent. Do not vendor it until it is actually
   deprecated — see "The freeze rule" above.
 - **`LICENSE`**: Apache-2.0 by operator default. Never add, change, or
@@ -315,6 +333,10 @@ LICENSE, NOTICE                  this repository's own license + full vendored i
 .pre-commit-config.yaml          hygiene hooks, scoped to non-archive root files only
 .github/                         Copilot pointer, dependabot (disabled, limit 0), CI caller
 .claude/settings.json            defensive Read() denies on secret-shaped globs
-besu-eth/  etclabscore/  ethereum/  ethereumproject/  multi-geth/  openethereum/
-                                  the six vendored organization directories — frozen
+besu-eth/  etclabscore/  ethereum/  ethereumproject/  multi-geth/
+openethereum/  iquidus/  meowsbits/  ethereumstack/
+                                 the vendored organization directories — frozen.
+                                 ethereum/ and meowsbits/ each also carry an
+                                 EXTRACTION.md and extracted subsets alongside
+                                 their whole vendors.
 ```
