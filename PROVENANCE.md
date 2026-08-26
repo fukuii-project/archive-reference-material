@@ -273,3 +273,482 @@ The Ethereum Classic fork of the end-to-end test harness. Distinct from `ethereu
 
 "Goldset For Testing Historical Results against Live ETC network." A single commit, two files — small enough that its value is entirely in not losing it.
 
+
+
+---
+
+# Ethereum Classic tooling and personal-account work — vendored 2026-08-26
+
+**Twenty-nine repositories, whole, with history**, plus one extraction. Selected against this
+archive's own test: what disappears if the upstream vanishes tomorrow.
+
+Three groups, and the reason differs by group:
+
+- **`etclabscore/`** — that organization is scheduled for deprecation, so its Ethereum
+  Classic-specific repositories are the clearest instance of the test.
+- **`iquidus/`** — the author of ECIP-1099. The Etchash implementation work lives in that
+  account's **forks**, not in the upstreams they were forked from, so vendoring the upstream
+  would preserve the wrong thing.
+- **`meowsbits/`** — the author of ECIP-1100. **Eight of the vendored trees across these groups
+  ship no license file at all**, and several carry zero forks upstream; GitHub preserves a
+  deleted repository's forks, so a zero-fork personal repository has nothing to survive it.
+
+Both authors have left the Ethereum Classic ecosystem.
+
+**Deliberately excluded**, because they fail the test rather than because they lack value:
+`iquidus/explorer` (737 stars, BSD-3-Clause, widely forked, not Ethereum Classic-specific),
+`iquidus/blockspider` (a general blockchain crawler), and the live `diega/*` repositories.
+`meowsbits/geth-prometheus` was checked and is an **empty repository** with zero refs.
+
+Every entry is verified by TREE HASH against its source clone, with a control confirming the
+comparison can report a mismatch. `meowsbits/EXTRACTION.md` covers the gists and documents.
+
+## `etclabscore/ethereum-json-rpc-specification/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/ethereum-json-rpc-specification` |
+| ref | `master` @ `97178e7dc3b417318e2977171254f6e21d080076` |
+| upstream date | 2020-11-11 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 286 commits |
+| contents | 19 files · 0.3 MB |
+| license | see NOTICE |
+| tree | `5a66f456fe335bcce9ccb8bc3318e7019a1879e0` |
+
+The EVM JSON-RPC specification, as OpenRPC.
+
+## `etclabscore/eth-x-chainspec/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/eth-x-chainspec` |
+| ref | `master` @ `47e34b489a9b99ee2b40cae35ab44b36efddb48e` |
+| upstream date | 2019-06-11 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 38 commits |
+| contents | 69 files · 6.5 MB |
+| license | none published |
+| tree | `6481b40ca15673db362018c032256bbdacc00bd1` |
+
+The cross-client chain configuration specification.
+
+## `etclabscore/go-etchash/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/go-etchash` |
+| ref | `master` @ `7746dfe207b3fb9a741ba996a3efeb481139826b` |
+| upstream date | 2022-08-31 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 12 commits |
+| contents | 10 files · 0.1 MB |
+| license | see NOTICE |
+| tree | `1901b4d7accdf0b8ddbcea8bb040a1cccd8e20a2` |
+
+The Etchash module, ECIP-1099's hashing change in Go.
+
+## `etclabscore/ancient-store-s3/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/ancient-store-s3` |
+| ref | `master` @ `e4ebc049a0220c3b6948183a4296c873f1962318` |
+| upstream date | 2020-09-08 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 17 commits |
+| contents | 10 files · 0.1 MB |
+| license | see NOTICE |
+| tree | `4fb3fd7c7c44e65b37c300cbf53471a90d3c500e` |
+
+An S3-backed ancient store for the production client.
+
+## `etclabscore/core-pool/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/core-pool` |
+| ref | `master` @ `2734a0a4eafb06736f4dacd93d43d174ea56f020` |
+| upstream date | 2021-05-17 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 297 commits |
+| contents | 38 files · 0.3 MB |
+| license | see NOTICE |
+| tree | `4042c4c13d59d4778e1e4a0619a34bb80f94956a` |
+
+The Ethereum Classic mining pool.
+
+## `etclabscore/core-pool-interface/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/core-pool-interface` |
+| ref | `master` @ `f3b664eb9f35655244f9042e639ecab32778d125` |
+| upstream date | 2021-09-17 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 188 commits |
+| contents | 55 files · 1.1 MB |
+| license | none published |
+| tree | `0aa291b99ce7a1abb092f79c84288f4f2f243a0d` |
+
+The mining pool's web interface.
+
+## `etclabscore/classic-geth-supervisor.sh/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/classic-geth-supervisor.sh` |
+| ref | `master` @ `2b859c34f595a76ce8c6047168127065f2634700` |
+| upstream date | 2019-01-16 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 54 commits |
+| contents | 11 files · 31 KB |
+| license | none published |
+| tree | `d5a70a468cafe3caa44373f069564d7536383a9e` |
+
+Early Ethereum Classic node metrics and supervision.
+
+## `etclabscore/expedition/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/expedition` |
+| ref | `master` @ `08f79fd012e261409049043136d7030ffdb6076e` |
+| upstream date | 2021-02-26 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 336 commits |
+| contents | 9 files · 16 KB |
+| license | see NOTICE |
+| tree | `f6d3033a5603a2da78aca0c60c7c6676664fcb80` |
+
+The block explorer. Archived upstream in 2021.
+
+## `etclabscore/signatory/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/signatory` |
+| ref | `master` @ `ea93c2b2ce0fe856a040d2f8d1eb09eed4343d87` |
+| upstream date | 2020-04-20 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 46 commits |
+| contents | 47 files · 0.6 MB |
+| license | see NOTICE |
+| tree | `23a98f8c199451c1071d538812e2e72e9f973cff` |
+
+The transaction signing service.
+
+## `etclabscore/signatory-core/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/signatory-core` |
+| ref | `master` @ `ef1d405955ebd11079958d6299ad54b31de5439d` |
+| upstream date | 2020-05-15 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 10 commits |
+| contents | 40 files · 0.6 MB |
+| license | see NOTICE |
+| tree | `9e9b0b62f18dbcc8cbbe88efccbc908c74315bd8` |
+
+The signing service's core library.
+
+## `etclabscore/jade-signer-rpc/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/jade-signer-rpc` |
+| ref | `master` @ `e6bc97bebf7f06757229e3618f5e197a18a66d5d` |
+| upstream date | 2019-10-08 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 223 commits |
+| contents | 71 files · 0.5 MB |
+| license | see NOTICE |
+| tree | `8ceca6e5b184a91c6d3fb0aa14d90ae55801b200` |
+
+The Jade signer's JSON-RPC surface.
+
+## `etclabscore/jade-rs/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/jade-rs` |
+| ref | `master` @ `baf50917a9f8d37fdb59d5f56e632479ff597947` |
+| upstream date | 2019-03-26 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 964 commits |
+| contents | 66 files · 0.3 MB |
+| license | see NOTICE |
+| tree | `c66b6f3f9bce72149c379182e822f95a2e323bbf` |
+
+The Jade signer in Rust.
+
+## `etclabscore/sig.tools/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/sig.tools` |
+| ref | `master` @ `4f916314c7c5b05590a02c5e8a344b6fa5cd9560` |
+| upstream date | 2020-11-23 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 169 commits |
+| contents | 71 files · 1.1 MB |
+| license | see NOTICE |
+| tree | `a1fc578be1a57dd262859e8d7fe082506f11092e` |
+
+The browser-based signing tools.
+
+## `etclabscore/eserialize/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/eserialize` |
+| ref | `master` @ `700f39941bcc1bcac6ad7a61808ed26a8f602b13` |
+| upstream date | 2020-05-13 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 30 commits |
+| contents | 37 files · 0.2 MB |
+| license | see NOTICE |
+| tree | `83b9499efe09eeb517eea7236553cf8ad01d44d6` |
+
+Ethereum value serialization helpers.
+
+## `etclabscore/jade-desktop/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/jade-desktop` |
+| ref | `master` @ `79f857380e2bf2c22f00af3a8aa6bfb7b0c66116` |
+| upstream date | 2020-11-25 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 85 commits |
+| contents | 33 files · 1.0 MB |
+| license | see NOTICE |
+| tree | `9a58ef40bdf6edfe008d71139f1e93adc2709a48` |
+
+The Jade signer's desktop client.
+
+## `etclabscore/rpcflow-meta-schema/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/rpcflow-meta-schema` |
+| ref | `master` @ `d6fb7351559ae86786b9da37d93b5f22514ce2c4` |
+| upstream date | 2020-12-22 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 16 commits |
+| contents | 30 files · 0.4 MB |
+| license | see NOTICE |
+| tree | `e7d93e491f46b1bcf931f08025c7ede9c4227033` |
+
+The RPC flow meta-schema.
+
+## `iquidus/ecip-1099-data/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/ecip-1099-data` |
+| ref | `master` @ `2dfa18d8bf1378f8d71cfeec7036cfc168ae54f9` |
+| upstream date | 2020-09-14 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 4 commits |
+| contents | 4 files · 24 KB |
+| license | none published |
+| tree | `92e71bfd14ad54f4b80ed1e3b4af3bc4e6dd04ba` |
+
+The epoch-transition research behind ECIP-1099, by that proposal's author.
+
+**Its `ETCHASH_FORK_BLOCK=11460000` is NOT an error, and must not be recorded as one.**
+`MAINNET.md` was written 2020-09-14. core-geth defined the mainnet activation as
+`11_700_000` on 2020-09-25, eleven days later, and `11460000` never appears in
+core-geth's params at any point in its history. Both values are epoch-aligned under
+both the old 30,000 and new 60,000 epoch lengths (11,460,000 = epoch 382 / 191;
+11,700,000 = epoch 390 / 195); the difference is exactly 8 old epochs, roughly 38
+days of additional lead time. This is a **superseded pre-decisional working value**,
+recorded before the activation block was chosen, and it is preserved as published.
+Read activation blocks from the production client, never from this file.
+
+## `iquidus/libdag/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/libdag` |
+| ref | `master` @ `a802384a5a2605254990aac6d4eda39a40089bff` |
+| upstream date | 2021-06-27 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 1 commits |
+| contents | 24 files · 0.1 MB |
+| license | see NOTICE |
+| tree | `bec96638e87cc985d2977a0b2388f2a8deec7e8a` |
+
+The DAG library carrying the Etchash modification.
+
+## `iquidus/dagd/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/dagd` |
+| ref | `master` @ `0efca3e210a60b859ddbbd1c954c1fd187c10635` |
+| upstream date | 2021-06-27 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 1 commits |
+| contents | 19 files · 41 KB |
+| license | none published |
+| tree | `9b313667c6b44a73ce21461e32a1812e18e3ebde` |
+
+The DAG daemon built on libdag.
+
+## `iquidus/ethash/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/ethash` |
+| ref | `master` @ `aa25253c9c5d7207b4ca5e0443d50460362dd4e8` |
+| upstream date | 2020-11-26 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 466 commits |
+| contents | 111 files · 0.3 MB |
+| license | see NOTICE |
+| tree | `9ae002f7a0bc27555758dfeffbc9280d224e73bd` |
+
+A fork carrying the Etchash modification. Same reasoning as `iquidus/ethminer`.
+
+## `iquidus/ethminer/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/ethminer` |
+| ref | `master` @ `c934fdfaf5a768d33a98e4b47362247e217c6644` |
+| upstream date | 2020-09-13 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 14,309 commits |
+| contents | 141 files · 1.4 MB |
+| license | see NOTICE |
+| tree | `91e55c5c1bf8e4d06ec1df1ea20578f23a02e1e7` |
+
+A fork, not the upstream miner. The Etchash modification implementing ECIP-1099 lives in the fork; the upstream does not carry it.
+
+## `iquidus/open-ethereum-pool/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/iquidus/open-ethereum-pool` |
+| ref | `master` @ `686b703f32c288199e206488ccc798677dfdf769` |
+| upstream date | 2020-01-06 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 216 commits |
+| contents | 136 files · 0.4 MB |
+| license | see NOTICE |
+| tree | `a69c09f4f3ca47099752ce851a1d7028155c2bca` |
+
+A fork carrying the Etchash modification, so a pool could pay out across the ECIP-1099 transition.
+
+## `ethereumstack/ethereumstack.tools/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/ethereumstack/ethereumstack.tools` |
+| ref | `master` @ `982b175b3d3ec6b4977c36e308ab9cabd3331728` |
+| upstream date | 2020-12-31 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 34 commits |
+| contents | 40 files · 2.2 MB |
+| license | see NOTICE |
+| tree | `373f5182f31d6586c9ec2f20b011fcdac11de4b5` |
+
+Ethereum Classic tooling from a dormant single-repo organization.
+
+## `meowsbits/51-percent-docs/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/51-percent-docs` |
+| ref | `master` @ `0d157d281c13a5de762aefa11ac099c8ef3f2abb` |
+| upstream date | 2026-08-26 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 1,617 commits |
+| contents | 27 files · 1.5 MB |
+| license | see NOTICE |
+| tree | `df843bc775ebf8e6546ca31a2c274351b7592a62` |
+
+Source for a website documenting the economics of 51% attacks, by ECIP-1100's author.
+
+**Live-looking but static.** 1,491 of its 1,617 commits are an automated exchange-rate
+feed committed by a bot; human authorship ended 2023-12-27. The upstream is not
+archived and the bot still runs, so a `pushed_at` check reports it as active. The
+substance is the documentation, not the rate series.
+
+## `meowsbits/mini-etc-network/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/mini-etc-network` |
+| ref | `main` @ `d77d4ada0811bad5d25c93fb7be62e536dc000ac` |
+| upstream date | 2022-07-25 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 1 commits |
+| contents | 6 files · 14 KB |
+| license | see NOTICE |
+| tree | `09c344c7a6bab41b060ab7d4c6724f0725a0b175` |
+
+An isolated core-geth peering testbed.
+
+## `meowsbits/x-client-tests-project/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/x-client-tests-project` |
+| ref | `master` @ `91d6a7ad261cc3138de750ca6909fb5aead013a2` |
+| upstream date | 2022-11-02 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 2 commits |
+| contents | 1 files · 20 KB |
+| license | none published |
+| tree | `20acd03b13193a62f7be92efb2b4b214c39a74a9` |
+
+Carries an Ethereum Classic fork list. **Zero stars and zero forks upstream.** GitHub keeps a deleted repository's forks alive; with no forks there is nothing to keep.
+
+## `meowsbits/go-miner-sim/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/go-miner-sim` |
+| ref | `master` @ `aae93a6cfd2a0fcbb36ab9e20409029c76f95c51` |
+| upstream date | 2022-05-23 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 2 commits |
+| contents | 287 files · 47.2 MB |
+| license | none published |
+| tree | `9e1433eaabf20357d36bd684ce750542ad5de46e` |
+
+Chain-growth simulation from the period ECIP-1100 was written. Zero forks upstream.
+
+## `meowsbits/canhaz.net/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/canhaz.net` |
+| ref | `gh-pages` @ `e44bc904e5fa4c667971d5a8fa892a3fb7f2cf87` |
+| upstream date | 2019-12-12 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 5 commits |
+| contents | 3 files · 0 KB |
+| license | none published |
+| tree | `f218b2449439d86425566b7b429c800400a0aa27` |
+
+An index of test network faucets. Zero stars and zero forks upstream.
+
+## `meowsbits/eserialize-cli/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/meowsbits/eserialize-cli` |
+| ref | `master` @ `d2f7a2f7fcae46057fbdab3691029bec043c3c8b` |
+| upstream date | 2021-08-12 |
+| vendored | 2026-08-26 |
+| mechanism | `git subtree add`, **full history** — 21 commits |
+| contents | 11 files · 43 KB |
+| license | see NOTICE |
+| tree | `159855a1efeef5a01e3eeff8f2b29c70e5263a60` |
+
+The command-line interface to Ethereum serialization.

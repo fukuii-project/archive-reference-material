@@ -133,6 +133,188 @@ besu-eth/besu-etc
   Read from:  besu-eth/besu-etc/LICENSE, besu-eth/besu-etc/NOTICE
 
 --------------------------------------------------------------------------------
+Ethereum Classic tooling, mining and signing work, and personal-account
+repositories, added 2026-08-26 (full vendors, whole repository with history)
+--------------------------------------------------------------------------------
+
+etclabscore/ethereum-json-rpc-specification
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/ethereum-json-rpc-specification/LICENSE.md
+
+etclabscore/eth-x-chainspec
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+etclabscore/go-etchash
+  License:    GPL-3.0-or-later
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/go-etchash/LICENSE.md
+
+etclabscore/ancient-store-s3
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/ancient-store-s3/LICENSE
+
+etclabscore/core-pool
+  License:    GPL-3.0-or-later
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/core-pool/LICENSE
+
+etclabscore/core-pool-interface
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+etclabscore/classic-geth-supervisor.sh
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+etclabscore/expedition
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/expedition/LICENSE.md
+
+etclabscore/signatory
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/signatory/LICENSE.md
+
+etclabscore/signatory-core
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/signatory-core/LICENSE.md
+
+etclabscore/jade-signer-rpc
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/jade-signer-rpc/LICENSE.md
+
+etclabscore/jade-rs
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/jade-rs/LICENSE
+
+etclabscore/sig.tools
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/sig.tools/LICENSE.md
+
+etclabscore/eserialize
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/eserialize/LICENSE.md
+
+etclabscore/jade-desktop
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/jade-desktop/LICENSE.md
+
+etclabscore/rpcflow-meta-schema
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/rpcflow-meta-schema/LICENSE.md
+
+iquidus/ecip-1099-data
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+iquidus/libdag
+  License:    MIT
+  Copyright:  Copyright 2021 Linzhi Ltd
+  Read from:  iquidus/libdag/COPYING.txt
+
+iquidus/dagd
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+iquidus/ethash
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  iquidus/ethash/LICENSE
+
+iquidus/ethminer
+  License:    GPL-3.0-or-later
+  Copyright:  not stated in the license file
+  Read from:  iquidus/ethminer/LICENSE
+
+iquidus/open-ethereum-pool
+  License:    GPL-3.0-or-later
+  Copyright:  not stated in the license file
+  Read from:  iquidus/open-ethereum-pool/LICENSE
+
+ethereumstack/ethereumstack.tools
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  ethereumstack/ethereumstack.tools/LICENSE.md
+
+meowsbits/51-percent-docs
+  License:    MIT
+  Copyright:  Copyright (c) 2020 Esau Silva
+  Read from:  meowsbits/51-percent-docs/LICENSE
+
+meowsbits/mini-etc-network
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  meowsbits/mini-etc-network/LICENSE
+
+meowsbits/x-client-tests-project
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+meowsbits/go-miner-sim
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+meowsbits/canhaz.net
+  License:    NONE FOUND. No LICENSE, COPYING, or LICENCE file exists at any
+              depth in this vendored tree, and the upstream GitHub repository
+              reports "license": null via the GitHub API (checked 2026-08-26).
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf.
+  Copyright:  not stated by upstream
+  Read from:  (absence confirmed across the whole tree; GitHub API cross-check)
+
+meowsbits/eserialize-cli
+  License:    Apache-2.0
+  Copyright:  not stated in the license file
+  Read from:  meowsbits/eserialize-cli/LICENSE.md
+
+--------------------------------------------------------------------------------
 Extractions (a subset of files, not the whole repository -- no root
 LICENSE/COPYING file exists inside these three trees, so the license below is
 read from the same upstream's own license file, at or near the extraction's
@@ -166,6 +348,22 @@ openethereum/openethereum
               openethereum/openethereum; grant language confirmed via
               accounts/ethkey/cli/src/main.rs and other .rs files at the same
               ref
+
+meowsbits/gists, meowsbits/documents
+  License:    NONE STATED for the gists as a set and for both documents. GitHub
+              gists carry no license field, and neither document states terms.
+              One gist (b5a8f9d1304a77c72807c2b981091452) ships its own LICENSE
+              file, which governs that gist alone. Recorded as a fact about what
+              was published; no license is assumed on this project's behalf.
+  Copyright:  Isaac (@meowsbits), author of ECIP-1100. Note that
+              meowsbits/51-percent-docs' own LICENSE names a different copyright
+              holder (Esau Silva); that is what upstream published and is
+              recorded above unchanged.
+  Read from:  each gist at the revision named in meowsbits/EXTRACTION.md; the two
+              documents carry no gist ID, and authorship rests on the embedded
+              user-images.githubusercontent.com/45600330/ URLs, where id 45600330
+              and login meowsbits resolve to each other (checked both directions,
+              2026-08-26)
 
 ================================================================================
 FORWARDED NOTICE CONTENT (Apache License 2.0, section 4(d))
