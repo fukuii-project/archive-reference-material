@@ -1,0 +1,34 @@
+{
+    "openrpc": "1.2.4",
+    "info": null,
+    "methods": [
+        {
+            "name": "MyCalculator.PlusOne",
+            "description": "```go\nfunc (c *MyCalculator) PlusOne(arg *PlusOneArg, reply *PlusOneReply) error {\n\tif arg == nil {\n\t\treturn errBadUse\n\t}\n\tanswer := *arg + 1\n\tc.history = append(c.history, int(answer))\n\t*reply = (PlusOneReply)(answer)\n\treturn nil\n}// PlusOne is deceivingly simple function that increments any value by 1.\n\n```",
+            "summary": "PlusOne is deceivingly simple function that increments any value by 1.\n",
+            "paramStructure": "by-position",
+            "params": [
+                {
+                    "name": "arg",
+                    "description": "*PlusOneArg",
+                    "schema": {
+                        "type": "integer"
+                    },
+                    "required": true
+                }
+            ],
+            "result": {
+                "name": "reply",
+                "description": "*PlusOneReply",
+                "schema": {
+                    "type": "integer"
+                },
+                "required": true
+            },
+            "externalDocs": {
+                "description": "Github remote link",
+                "url": "https://github.com/etclabscore/go-openrpc-reflect/blob/master/example1_test.go#L36"
+            }
+        }
+    ]
+}
