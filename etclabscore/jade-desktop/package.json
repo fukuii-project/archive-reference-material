@@ -1,0 +1,101 @@
+{
+  "name": "@etclabscore/jade-service-runner-ui",
+  "version": "0.0.0-development",
+  "description": "",
+  "homepage": ".",
+  "main": "build/electron.js",
+  "scripts": {
+    "build": "rescripts build",
+    "build:electron": "tsc electron/electron.ts --esModuleInterop true --outDir build",
+    "start": "rescripts start",
+    "version": "cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]'",
+    "electron": "npm run build:electron && NODE_ENV=development electron --inspect=5858 build/electron.js",
+    "electron:build": "npm run build:electron && electron-builder --publish never",
+    "lint": "tslint --fix -p .",
+    "test": "npm run lint && rescripts test --coverage --passWithNoTests"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@rescripts/cli": "0.0.11",
+    "@rescripts/rescript-env": "0.0.10",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.19.7",
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "jest": "26.6.0",
+    "react-scripts": "^4.0.1",
+    "ts-jest": "^26.4.4",
+    "tslint": "^5.17.0",
+    "electron-builder": "^22.9.1",
+    "electron": "^11.0.3",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@etclabscore/jade-service-runner": "^1.10.5",
+    "@etclabscore/jade-service-runner-client": "^1.10.5",
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.3.0",
+    "@rooks/use-interval": "^3.2.2",
+    "electron-log": "^3.0.7",
+    "menubar": "^6.0.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.2.2",
+    "use-dark-mode": "^2.3.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "productName": "jade-service-runner-ui",
+    "appId": "service-runner-ui.jade.etclabscore",
+    "artifactName": "${productName}-${os}-${arch}-${env.APP_VERSION_GIT_TAG}.${ext}",
+    "compression": "normal",
+    "asar": true,
+    "files": [
+      "build/**/*",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": [
+        "tar.gz"
+      ]
+    },
+    "dmg": {
+      "iconSize": 128,
+      "contents": [
+        {
+          "x": 180,
+          "y": 190
+        },
+        {
+          "x": 380,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
+  },
+  "rescripts": [
+    "env"
+  ]
+}

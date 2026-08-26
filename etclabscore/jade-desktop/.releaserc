@@ -1,0 +1,43 @@
+{
+  "tagFormat": "${version}",
+  "branch": "master",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/git"
+  ],
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github"
+  ],
+  "publish": [
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist/*.tar.gz",
+            "label": "jade-service-runner.tar.gz"
+          },
+          {
+            "path": "dist/jade-service-runner-ui-mac*.dmg",
+            "label": "jade-service-runner-mac.dmg"
+          },
+          {
+            "path": "dist/*.exe",
+            "label": "jade-service-runner-windows.exe"
+          }
+        ]
+      }
+    ]
+  ],
+  "success": [
+    "@semantic-release/github"
+  ],
+  "fail": [
+    "@semantic-release/github"
+  ]
+}
