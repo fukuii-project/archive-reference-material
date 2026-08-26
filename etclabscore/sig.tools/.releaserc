@@ -1,0 +1,57 @@
+{
+  "tagFormat": "${version}",
+  "branch": "master",
+  "plugins": [
+    ["@open-rpc/semantic-release-plugin", {
+      "documentLocation": "src/openrpc.json"
+    }],
+    ["@semantic-release/npm", {
+      "npmPublish": false
+    }],
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/git",
+    "@qiwi/semantic-release-gh-pages-plugin"
+  ],
+  "prepare": [
+    "@semantic-release/npm",
+    ["@open-rpc/semantic-release-plugin", {
+      "documentLocation": "src/openrpc.json"
+    }],
+    "@semantic-release/changelog",
+    "@semantic-release/git"
+  ],
+  "verifyConditions": [
+    ["@open-rpc/semantic-release-plugin", {
+      "documentLocation": "src/openrpc.json"
+    }],
+    "@semantic-release/changelog",
+    "@semantic-release/git",
+    "@semantic-release/github"
+
+  ],
+  "publish": [
+    [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "./publish.sh"
+      }
+    ],
+    "@semantic-release/github",
+    {
+      "path": "@qiwi/semantic-release-gh-pages-plugin",
+      "msg": "deploy: new sig.tools gh-pages release",
+      "src": "build",
+      "branch": "gh-pages",
+      "pullTagsBranch": ""
+    }
+  ],
+  "success": [
+    "@semantic-release/github"
+  ],
+  "fail": [
+    "@semantic-release/github"
+  ]
+}
