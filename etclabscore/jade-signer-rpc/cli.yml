@@ -1,0 +1,36 @@
+name: jade-signer
+about: Jade Signer OpenRPC Server
+
+settings:
+    - [ArgRequiredElseHelp, GlobalVersion]
+
+args:
+    - version:
+        short: V
+        long: version
+        help: Display version
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity
+    - base-path:
+        short: p
+        long: base-path
+        help: Set path for storage
+        takes_value: true
+    - chain:
+        short: c
+        long: chain
+        help: Sets a chain name
+        default_value: mainnet
+        takes_value: true
+    - host:
+          help: Host for RPC server
+          takes_value: true
+          default_value: "127.0.0.1"
+    - port:
+        help: Port for RPC server
+        takes_value: true
+        default_value: "1920"
+
+    
