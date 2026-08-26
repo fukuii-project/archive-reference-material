@@ -1,0 +1,18 @@
+{
+    "name": "eserialize-cli",
+    "bin": "./index.js",
+    "version": "1.0.0",
+    "description": "CLI for eserialize",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@etclabscore/eserialize": "^1.0.2",
+        "meow": "^6.0.0",
+        "readline": "^1.3.0",
+        "split": "^1.0.1"
+    }
+}
