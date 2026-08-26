@@ -1,0 +1,142 @@
+{
+  "$schema": "https://meta.json-schema.tools/",
+  "title": "Flow Meta Schema",
+  "description": "A standard way to define JSON-RPC flows.",
+  "type": "object",
+  "required": [
+    "name",
+    "stepProviders",
+    "flow",
+    "rpcflow"
+  ],
+  "properties": {
+    "rpcflow": {
+      "title": "FlowVersion",
+      "description": "**REQUIRED**. This string MUST be the semantic version number of the Specification that the document uses.",
+      "type": "string",
+      "enum": [
+        "0.0.0-development"
+      ]
+    },
+    "name": {
+      "title": "FlowName",
+      "description": "**REQUIRED**. Name of the Flow.",
+      "type": "string",
+      "examples": [
+        "foobarbaz"
+      ]
+    },
+    "stepProviders": {
+      "title": "StepProviders",
+      "type": "array",
+      "items": {
+        "title": "StepProvider",
+        "type": "object",
+        "required": [
+          "namespace",
+          "transport",
+          "url"
+        ],
+        "properties": {
+          "namespace": {
+            "title": "Namespace",
+            "type": "string"
+          },
+          "transport": {
+            "title": "Transport",
+            "type": "string",
+            "enum": [
+              "postmessageiframe",
+              "postmessagewindow",
+              "http",
+              "websocket"
+            ]
+          },
+          "url": {
+            "title": "Url",
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "description": {
+      "title": "FlowDescription",
+      "type": "string",
+      "description": "Markdown description describing the specification extension."
+    },
+    "summary": {
+      "title": "FlowSummary",
+      "type": "string",
+      "description": "A short summary of what the flow is."
+    },
+    "contextSchema": {
+      "$ref": "https://meta.json-schema.tools/"
+    },
+    "context": {
+      "title": "FlowContext",
+      "description": "Additional context provided to the flow. If `contextSchema` exists, `context` **MUST** validate against it. Context can be used via the `\\\"${context.<path>}\\\"` [Runtime Expression](https://github.com/etclabscore/json-template-language#what-is-it-used-for)",
+      "type": "object"
+    },
+    "flow": {
+      "title": "Flow",
+      "description": "Describes how to call JSON-RPC methods at runtime and use their results via [Runtime Expressions](https://github.com/etclabscore/json-template-language#what-is-it-used-for). Flow results can be used via \\\"${results.<keyName>}\\\" where `keyName` refers to the key of the flow object to use the results from.",
+      "type": "object",
+      "patternProperties": {
+        "": {
+          "title": "FlowObject",
+          "type": "object",
+          "required": [
+            "method",
+            "params"
+          ],
+          "properties": {
+            "method": {
+              "title": "FlowMethod",
+              "type": "string",
+              "description": "**REQUIRED**. Canonical name for the method call."
+            },
+            "params": {
+              "title": "FlowParams",
+              "description": "A list of parameters to be called for this method.",
+              "oneOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "array",
+                  "items": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "externalDocumentation": {
+      "title": "FlowExternalDocumentationObject",
+      "type": "object",
+      "additionalProperties": false,
+      "summary": "Information about external documentation.",
+      "description": "Allows referencing an external resource for extended documentation.",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "description": {
+          "title": "FlowExternalDocumentationObjectDescription",
+          "description": "A verbose explanation of the target documentation. GitHub Flavored Markdown syntax MAY be used for rich text representation.",
+          "summary": "External documentation description.",
+          "type": "string"
+        },
+        "url": {
+          "title": "FlowExternalDocumentationObjectUrl",
+          "description": "**REQUIRED**. The URL for the target documentation. Value MUST be in the format of a URL.",
+          "summary": "External Documentation URI.",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}
