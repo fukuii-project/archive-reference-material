@@ -1,0 +1,12 @@
+*.tgz
+node_modules
+coverage
+build
+docs
+.DS_Store
+dist
+/**/build
+fixtures/generated-clients
+generated-client/
+signatory/
+test-signatory*
