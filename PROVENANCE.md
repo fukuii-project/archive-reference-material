@@ -752,3 +752,114 @@ An index of test network faucets. Zero stars and zero forks upstream.
 | tree | `159855a1efeef5a01e3eeff8f2b29c70e5263a60` |
 
 The command-line interface to Ethereum serialization.
+
+
+
+---
+
+# Two further implementations of the shared chain — vendored 2026-08-27
+
+**Two repositories, whole, with history**, added on different grounds — which is why both entries
+below need reading rather than one standing in for the other. `ethereum/ethereumj` is a historic
+Ethereum Classic client and enters on this archive's usual test: what disappears if the upstream
+vanishes tomorrow. `ethereum/aleth` has **zero** Ethereum Classic support and does not meet that
+test at all. It is held for the ERA, on exactly the ground `ethereum/go-ethereum-dao` above states.
+
+**Neither is a pin in `../upstream/`, and the reason is the same for both: both upstreams are
+archived on GitHub.** That tree holds pins on LIVE upstreams, where tracking beats copying because
+a copy would only drift. There is nothing here left to track and no drift left to avoid, and a pin
+on a dead repository still leaves a `.gitmodules` URL that dies if the repository ever does.
+
+Both are verified by TREE HASH against their source clones, with a control confirming the
+comparison can report a mismatch, and both were swept for oversized blobs across their whole
+histories before either landed — the sweep calibrated at 1 MiB first, so that an empty result at
+100 MiB meant "none" rather than "the check is blind."
+
+## `ethereum/aleth/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/ethereum/aleth` |
+| ref | `master` @ `5d1078ac43e0e2eaffb6e58300686d20a0bfb512` |
+| upstream date | 2021-10-28 |
+| vendored | 2026-08-27 |
+| mechanism | `git subtree add`, **full history** — 34,262 commits |
+| contents | 578 files · 4.2 MB |
+| license | see NOTICE |
+| tree | `dd35ece7c5cb875011224f49ede6e29e5c6e360c` |
+
+The C++ client — one of the original implementations of the shared chain, and the C++ record of it
+from Frontier through the DAO fork. Its history runs 2013-12-23 to 2021-10-28, and its final commit
+is a deprecation merge. **The upstream is archived but in no danger; this is held for the ERA, not
+for preservation** — the same ground `ethereum/go-ethereum-dao` is held on.
+
+**Unlike the two `-dao` entries above, this is not a fork-era snapshot.** `go-ethereum-dao` and
+`parity-ethereum-dao` are frozen AT the fork; this is the whole client at its final state, so it
+carries the DAO fork implementation and seven more years besides. 19 files at this ref carry DAO
+fork handling, `libethashseal/genesis/mainNetwork.cpp` and `libethcore/ChainOperationParams.h`
+among them.
+
+**It has ZERO Ethereum Classic support, and is not a historic Ethereum Classic client.** Measured
+at this ref: **0** files match `ethereum.?classic` or `ETCFork`, against a control search for
+`ethash` that matches 80. It implemented the DAO fork and never carried the chain that declined it.
+Do not file it in the client lineage above, and do not read its presence in this organization
+directory as a claim that it carried this chain.
+
+**It shares a root commit with go-ethereum, and that is NOT shared lineage.** aleth has 27 root
+commits; `68ccbefc9` is one of them, and it is already reachable in this archive through
+`ethereum/go-ethereum-dao`. So the standard independence check — the one that establishes
+`besu-eth/besu-etc` as a third oracle and collapses `multi-geth` into core-geth's lineage — reports
+a shared root here and reads as evidence that the C++ client is a geth fork. It is not. Open the
+commit:
+
+```sh
+git ls-tree -r --name-only 68ccbefc9
+```
+
+**Three files** — `.gitignore`, `ethereum.js`, `index.html` — authored `obscuren`, 2014-09-30,
+message `init`. It is the early JavaScript library's history, merged into both repositories, and
+carries no client code in any language. A shared root is evidence of a shared *repository ancestor*
+and nothing more; check what the root contains before drawing a lineage from it.
+
+Four mode-160000 gitlinks live inside this tree — `cmake/cable`, `evmc`, `scripts/dopple`,
+`test/jsontests` — and aleth carries its own `.gitmodules` for them, which git reads at no depth but
+the repository root.
+
+## `ethereum/ethereumj/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/ethereum/ethereumj` |
+| ref | `develop` @ `200882753ee7c1a516d72b22cc5073055aa0c978` |
+| upstream date | 2020-05-20 |
+| vendored | 2026-08-27 |
+| mechanism | `git subtree add`, **full history** — 5,214 commits |
+| contents | 770 files · 67.6 MB |
+| license | see NOTICE |
+| tree | `7eb2bda9e67397fe320c1a74512560a9d77f5d04` |
+
+The Java client, and **a historic Ethereum Classic client** — the case this archive vendors whole.
+`ethereumj-core/src/main/java/org/ethereum/config/blockchain/ETCFork3M.java` implements this chain's
+2.5M and 3M forks, and its test asserts chain id 61. That support arrived 2017-01-16 in a commit
+titled "Add ETC 2.5M and 3M forks" and **is still present at this ref.**
+
+**Frozen at `develop`, and the freeze point was confirmed by content rather than assumed from the
+default branch.** `EXTRACTION-historic-clients.md` is emphatic that the two are not the same
+question — OpenEthereum removed this chain two years before its final commit, so its default branch
+is not its supporting state. Here they coincide, and this is the check that says so:
+
+```sh
+git log --diff-filter=D -- '*ETCFork3M.java'
+```
+
+Empty output is the pass, and it was empty. Calibrate it against `*.java`, which returns real
+deletions; a filter that can report nothing proves nothing. This is the *"repository ended while
+still carrying this chain"* case that file names for `multi-geth`.
+
+It is also **the only JVM record of this chain's early forks written while they were happening.**
+`besu-eth/besu-etc` is the other JVM client here and is a far later reimplementation; ethereumj
+carried Ethereum Classic contemporaneously, in the era `ETCFork3M` is named after.
+
+**The copyright holder is not the Ethereum Foundation**, despite the `ethereum/` organization. All
+682 header instances in this tree read `Copyright (c) [2016] [ <ether.camp> ]` or the same with a
+later year, and the license is the LESSER GPL rather than the GPL. See NOTICE.

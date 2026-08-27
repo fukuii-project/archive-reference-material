@@ -315,6 +315,65 @@ meowsbits/eserialize-cli
   Read from:  meowsbits/eserialize-cli/LICENSE.md
 
 --------------------------------------------------------------------------------
+Two further implementations of the shared chain, added 2026-08-27 (full
+vendors, whole repository with history)
+--------------------------------------------------------------------------------
+
+ethereum/aleth
+  License:    GPL-3.0, stated affirmatively by the tree rather than inferred
+              from an absence: 388 files carry the header "Licensed under the
+              GNU General Public License, Version 3." -- full stop -- and 0
+              files anywhere in the tree make an "or (at your option) any
+              later version" grant. The phrase "any later version" does occur
+              three times, all of them inside LICENSE itself, which is the
+              unmodified GPLv3 text: twice in its section 14 describing how
+              the FSF revises the license, once in its "How to Apply These
+              Terms" appendix template. Neither location is a grant made by
+              this project. README.md agrees, linking "GNU General Public
+              License v3" plainly. Recorded as GPL-3.0 rather than
+              GPL-3.0-or-later on the same basis as etclabscore/hive above,
+              and unlike the go-ethereum- and Parity-derived entries.
+              Upstream bundles third-party code that keeps its own terms:
+              utils/json_spirit/ (11 files) is MIT, "Copyright John W.
+              Wilkinson 2007 - 2009", and cmake/HunterGate.cmake is 3-clause
+              BSD, "Copyright (c) 2013-2017, Ruslan Baratov".
+  Copyright:  Copyright 2013-2019 Aleth Authors, and the same holder under
+              other start years across the per-file headers -- "Aleth
+              Authors" is uniform; no other holder appears in a header.
+  Read from:  ethereum/aleth/LICENSE, ethereum/aleth/README.md ("License"),
+              and the per-file headers throughout the vendored tree
+
+ethereum/ethereumj
+  License:    LGPL-3.0-or-later. Two things separate this from the GPL-3.0
+              entries above. LICENSE is the GNU LESSER General Public License
+              v3, not the GPL. And the headers here DO make the or-later
+              grant, in the canonical form -- "under the terms of the GNU
+              Lesser General Public License as published by the Free Software
+              Foundation, either version 3 of the License, or (at your
+              option) any later version" -- carried by 681 of the 770 files
+              at this ref, all 681 naming the LESSER license. 0 files make a
+              non-lesser GPL grant, so this is NOT the dual GPL-3.0-or-later
+              / LGPL-3.0-or-later split the go-ethereum-derived entries
+              carry; it is LGPL throughout. Upstream bundles third-party code
+              that keeps its own terms: gradlew and gradlew.bat are the
+              Gradle wrapper, Apache-2.0, "Copyright 2015 the original author
+              or authors", carrying no LGPL header at all; and four source
+              files -- ECKey.java, QuotientFilter.java, CopyOnWriteMap.java,
+              FastByteComparisons.java -- carry the ether.camp LGPL header
+              AND a second upstream attribution for code they incorporate
+              (ECKey.java's reads "Copyright 2011 Google Inc.", Apache-2.0).
+  Copyright:  Copyright (c) [2016] [ <ether.camp> ] -- NOT the Ethereum
+              Foundation, despite the ethereum/ organization this tree is
+              vendored under. Uniform across 682 instances: 681 source
+              headers under 2016, 2017 and 2018 start years, plus LICENSE.
+              LICENSE's own header reads "Copyright (c) [2016] [ <ether.camp>
+              ], Inc. <http://fsf.org/>" -- the trailing FSF URL is an
+              artifact of the template the holder was filled into, and is
+              recorded here as published rather than tidied.
+  Read from:  ethereum/ethereumj/LICENSE and the per-file headers throughout
+              the vendored tree
+
+--------------------------------------------------------------------------------
 Extractions (a subset of files, not the whole repository -- no root
 LICENSE/COPYING file exists inside these three trees, so the license below is
 read from the same upstream's own license file, at or near the extraction's
