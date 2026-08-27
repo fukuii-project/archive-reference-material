@@ -16,6 +16,22 @@
 	path = etclabscore/tests/LegacyTests
 	url = https://github.com/ethereum/legacytests
 	ignore = all
+[submodule "ethereum/aleth/cmake/cable"]
+	path = ethereum/aleth/cmake/cable
+	url = https://github.com/ethereum/cable
+	ignore = all
+[submodule "ethereum/aleth/evmc"]
+	path = ethereum/aleth/evmc
+	url = https://github.com/ethereum/evmc
+	ignore = all
+[submodule "ethereum/aleth/scripts/dopple"]
+	path = ethereum/aleth/scripts/dopple
+	url = https://github.com/ethereum/dopple
+	ignore = all
+[submodule "ethereum/aleth/test/jsontests"]
+	path = ethereum/aleth/test/jsontests
+	url = https://github.com/ethereum/tests.git
+	ignore = all
 [submodule "ethereumproject/go-ethereum/tests/testData"]
 	path = ethereumproject/go-ethereum/tests/testData
 	url = https://github.com/ethereum/tests.git
@@ -23,6 +39,14 @@
 [submodule "ethereumproject/parity/ethcore/res/ethereum/tests"]
 	path = ethereumproject/parity/ethcore/res/ethereum/tests
 	url = https://github.com/ethereum/tests.git
+	ignore = all
+[submodule "iquidus/ethminer/cmake/Hunter/disabled-mode"]
+	path = iquidus/ethminer/cmake/Hunter/disabled-mode
+	url = https://github.com/hunter-packages/disabled-mode
+	ignore = all
+[submodule "iquidus/ethminer/cmake/cable"]
+	path = iquidus/ethminer/cmake/cable
+	url = https://github.com/ethereum/cable
 	ignore = all
 [submodule "multi-geth/multi-geth/tests/testdata"]
 	path = multi-geth/multi-geth/tests/testdata
