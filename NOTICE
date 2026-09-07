@@ -374,6 +374,32 @@ ethereum/ethereumj
               the vendored tree
 
 --------------------------------------------------------------------------------
+The preceding repository's client, added 2026-09-07 (full vendor, whole
+repository with history, frozen at the 2024-12-16 repository boundary)
+--------------------------------------------------------------------------------
+
+etclabscore/core-geth
+  License:    Dual: GPL-3.0-or-later (cmd/) and LGPL-3.0-or-later (libraries),
+              the same split and the same confirmation method as the other
+              go-ethereum-derived entries above. Measured at this ref rather
+              than inherited from those entries: 970 files make the LESSER
+              grant and 105 make the non-lesser GPL grant, and 1071 of those
+              1075 carry "or (at your option) any later version". The four
+              that do not are README.md and cmd/clef/tutorial.md, which name a
+              license in prose and carry no header, so every actual file
+              header makes the or-later grant.
+  Copyright:  Two holders, both present, with no file carrying both:
+              "The go-ethereum Authors" in 1022 files and "The core-geth
+              Authors" in 5 -- accounts/hd_cg.go, accounts/hd_cg_test.go,
+              cmd/ancient-store-mem/lib/mem.go, cmd/ancient-store-mem/main.go
+              and cmd/ancient-store-mem/root.go. The downstream project added
+              its own attribution only to files it authored outright and left
+              every inherited header untouched. Recorded as published.
+  Read from:  etclabscore/core-geth/COPYING,
+              etclabscore/core-geth/COPYING.LESSER, and the per-file headers
+              throughout the vendored tree (grant language and holders)
+
+--------------------------------------------------------------------------------
 Extractions (a subset of files, not the whole repository -- no root
 LICENSE/COPYING file exists inside these three trees, so the license below is
 read from the same upstream's own license file, at or near the extraction's

@@ -863,3 +863,80 @@ carried Ethereum Classic contemporaneously, in the era `ETCFork3M` is named afte
 **The copyright holder is not the Ethereum Foundation**, despite the `ethereum/` organization. All
 682 header instances in this tree read `Copyright (c) [2016] [ <ether.camp> ]` or the same with a
 later year, and the license is the LESSER GPL rather than the GPL. See NOTICE.
+
+# The preceding repository's client — vendored 2026-09-07
+
+**One repository, whole, with history, frozen at a repository boundary rather than at an upstream's
+death.** This upstream is alive and still committing. What ended at this ref is not the repository —
+it is that repository's run as this chain's canonical client line.
+
+`ethereumclassic/core-geth` was created on 2024-12-21 from `etclabscore/core-geth` at commit
+`7ef3ecd7a` (2024-12-16), and has carried Ethereum Classic's Core-Geth since; that commit is
+preserved upstream on the `archive-etclabscore-2024-12` branch and tagged
+`archive/etclabscore-2024-12`. **Both repositories have committed independently from that commit
+ever since**, so the preceding upstream will never again show this state except as one commit deep
+inside a history that diverged from the line this archive tracks. That is what this copy holds, and
+it is why the entry exists despite the upstream being in no danger.
+
+**The boundary is enforced at the object level, not by naming a ref.** A vendoring can claim a
+freeze point and still drag later history in through a branch fetch, and nothing about the working
+tree would show it. This one does not — the commit of every release tag published on that upstream
+after the boundary is unresolvable in this repository:
+
+```sh
+git cat-file -t 96b2afc25   # want: fatal: Not a valid object name
+git cat-file -t 7ef3ecd7a   # want: commit  <- the control
+```
+
+**The negative result means something only because the positive control resolves.** Checked at
+vendoring for seven post-boundary commits, including the commit behind every later release tag; all
+seven were absent and the boundary commit was present.
+
+## `etclabscore/core-geth/`
+
+| field | value |
+|---|---|
+| upstream | `https://github.com/etclabscore/core-geth` |
+| ref | `master` @ `7ef3ecd7a716354589c2f27ff8f4b74d7a5edf2e` |
+| upstream date | 2024-12-16 |
+| vendored | 2026-09-07 |
+| mechanism | `git subtree add`, **full history** — 19,476 commits |
+| contents | 2,194 files · 76 MB |
+| license | see NOTICE |
+| tree | `29bf8ae0e7b759e68f6af107647f6ffcfcb27015` |
+
+The client that carried this chain after multi-geth, and the fourth link in the lineage above. Its
+Ethereum Classic support was measured rather than assumed: 30 files match `ethereum.?classic`,
+`ETCFork` or `ClassicChainConfig` at this ref, against an `ethash` control matching 302.
+
+**This ref is NOT a release, and the tree says so.** `params/version.go` reads `1.12.21-unstable` —
+six months of development past `v1.12.20` (2024-06-10), which is the last release this history
+contains. The upstream tags `v1.12.21`, `v1.12.22` and `v1.12.23` all postdate the boundary and none
+of them is reachable here. Do not read the vendored tree as any published version, and do not cite a
+version number off it.
+
+**Shares root commit `5db3335dc` with `multi-geth/multi-geth`, and here that IS shared lineage** —
+the multi-geth entry above already records the two as one client line under two names, so the
+standard independence check reports a shared root and is right to. It also shares `68ccbefc9` with
+`ethereum/go-ethereum`, which is NOT lineage: that root holds the early JavaScript library's three
+files, exactly as the `ethereum/aleth` entry records.
+
+Three mode-160000 gitlinks live inside this tree — `tests/testdata`, `tests/testdata-etc` and
+`tests/evm-benchmarks` — mapped in the root `.gitmodules`, because one unmapped gitlink fails
+`git submodule status` for the whole repository rather than for that path alone. `tests/testdata-etc`
+pins `06ec708ea7`, **the same ref this archive vendors whole at `etclabscore/tests`**, so the client
+and the suite it was tested against are both held here at the ref that pairs them.
+
+**Frozen at `7ef3ecd7a` — prove it by tree hash, never by diff:**
+
+```sh
+git rev-parse '7ef3ecd7a^{tree}'
+git rev-parse 'HEAD:etclabscore/core-geth'
+```
+
+Both read `29bf8ae0e7b759e68f6af107647f6ffcfcb27015` at vendoring, checked against a control —
+`v1.12.20^{tree}`, which is `ed3abaab12` — confirming the comparison can report a mismatch.
+
+Swept for blobs over 100 MiB across the whole grafted history before landing: **0 hits**, the sweep
+calibrated at 1 MiB first, which returns 135. The largest blob in the history is
+`tests/files/VMTests/vmInputLimits.json` at 60.3 MiB.
