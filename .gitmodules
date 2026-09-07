@@ -12,6 +12,18 @@
 	path = besu-eth/besu-etc/ethereum/referencetests/src/reference-test/external-resources
 	url = https://github.com/ethereum/tests.git
 	ignore = all
+[submodule "etclabscore/core-geth/tests/evm-benchmarks"]
+	path = etclabscore/core-geth/tests/evm-benchmarks
+	url = https://github.com/ipsilon/evm-benchmarks
+	ignore = all
+[submodule "etclabscore/core-geth/tests/testdata"]
+	path = etclabscore/core-geth/tests/testdata
+	url = https://github.com/ethereum/tests
+	ignore = all
+[submodule "etclabscore/core-geth/tests/testdata-etc"]
+	path = etclabscore/core-geth/tests/testdata-etc
+	url = https://github.com/etclabscore/tests
+	ignore = all
 [submodule "etclabscore/tests/LegacyTests"]
 	path = etclabscore/tests/LegacyTests
 	url = https://github.com/ethereum/legacytests
