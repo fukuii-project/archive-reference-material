@@ -32,10 +32,18 @@ its eras** — and a subset cannot show how a client changed across one.
 | `openethereum/openethereum` | `openethereum/openethereum` @ `8ca8089e9` | 2020-06-01 | **extraction only** — not in the whole-vendor pass |
 | `multi-geth/multi-geth` | `multi-geth/multi-geth` @ `38865665e` | 2021-02-27 | between Parity and core-geth |
 | `besu-eth/besu-etc` | `besu-eth/besu` @ `eb4248c99` | 2026-02-09 | Besu's ETC support, which lives only in a fork org |
+| `etclabscore/core-geth` | `etclabscore/core-geth` @ `7ef3ecd7a` | 2024-12-16 | the client after multi-geth, frozen at the repository boundary |
 
-**core-geth is deliberately absent.** It is the live production client with one more release
-planned, so it fails the test this directory applies — what disappears if the upstream vanishes
-tomorrow. Vendor it when it is actually deprecated, not before.
+**Two repositories are named core-geth. Read the organization, not the bare name.**
+
+**`ethereumclassic/core-geth` is deliberately absent.** It is the live production client with one
+more release planned, so it fails the test this directory applies — what disappears if the upstream
+vanishes tomorrow. Vendor it when it is actually deprecated, not before.
+
+**`etclabscore/core-geth` is a different repository and is in the table above**, frozen at the
+commit the successor was created from. Its upstream is alive and has committed past that commit;
+that continuation is deliberately unreachable here, and completing it would erase the boundary the
+entry exists to record.
 
 `PROVENANCE.md` records refs, dates, and known defects. Read it before using any of this.
 
