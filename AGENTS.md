@@ -96,9 +96,22 @@ deletes something else, extract it here and record the refs, following the
 pattern `ethereum/EXTRACTION.md` and the "Extractions" section of
 `PROVENANCE.md` already establish.
 
-**core-geth is deliberately absent**, and stays absent until it is actually
-deprecated. It is the live production client with at least one more Olympia
-release planned, so today it fails this directory's own test: what
+**Two repositories are named core-geth, and only one of them is absent. Read
+the organization, never the bare name.**
+
+`etclabscore/core-geth` **is here**, frozen at `7ef3ecd7a` (2024-12-16) — the
+commit `ethereumclassic/core-geth` was created from five days later. It is
+vendored on a ground no other client entry uses: its upstream is alive and still
+committing, and what ended at that commit is not the repository but its run as
+this chain's canonical client line. **Its continuation past that commit is
+deliberately unreachable here** — not merely un-vendored, but absent from the
+object store, verified at vendoring against a positive control. Do not
+"complete" it by fetching past the boundary; that would erase the only thing the
+entry records.
+
+**`ethereumclassic/core-geth` is deliberately absent**, and stays absent until it
+is actually deprecated. It is the live production client with at least one more
+Olympia release planned, so today it fails this directory's own test: what
 disappears if the upstream vanishes tomorrow. Do not vendor it preemptively.
 
 ## Figures in these documents must not rot
@@ -339,8 +352,11 @@ boundary regardless of where a commit lands.
   `meowsbits/EXTRACTION.md`**: existing entries are frozen; **appending a new
   entry for newly added material is expected** and is how an addition is
   recorded. See "The freeze rule" for the append-only proof.
-- **`core-geth`**: deliberately absent. Do not vendor it until it is actually
-  deprecated — see "The freeze rule" above.
+- **`ethereumclassic/core-geth`**: deliberately absent. Do not vendor it until
+  it is actually deprecated — see "The freeze rule" above. **`etclabscore/core-geth`
+  is a different repository and IS here**, frozen at the boundary commit with
+  everything its upstream published afterward deliberately unreachable. Never
+  extend it to that upstream's current state.
 - **`LICENSE`**: Apache-2.0 by operator default. Never add, change, or
   recommend changing it, and never propose a license for
   `ethereumproject/tests`, which upstream shipped without one.
