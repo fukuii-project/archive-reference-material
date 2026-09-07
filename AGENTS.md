@@ -103,7 +103,13 @@ the organization, never the bare name.**
 commit `ethereumclassic/core-geth` was created from five days later. It is
 vendored on a ground no other client entry uses: its upstream is alive and still
 committing, and what ended at that commit is not the repository but its run as
-this chain's canonical client line. **Its continuation past that commit is
+this chain's canonical client line — the era the ETC Cooperative funded, from
+January 2022 until that organization moved to maintenance mode. `PROVENANCE.md`
+cites the Cooperative's own published record for both ends, including the slide
+in which that organization's own Senior Editor proposes moving Core Geth to the
+Ethereum Classic community repository. **That slide is image content in a
+photograph, so `pdftotext` reports it absent with a working control** — read
+PROVENANCE.md before concluding anything from a text sweep of those PDFs. **Its continuation past that commit is
 deliberately unreachable here** — not merely un-vendored, but absent from the
 object store, verified at vendoring against a positive control. Do not
 "complete" it by fetching past the boundary; that would erase the only thing the

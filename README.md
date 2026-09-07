@@ -41,9 +41,11 @@ more release planned, so it fails the test this directory applies — what disap
 vanishes tomorrow. Vendor it when it is actually deprecated, not before.
 
 **`etclabscore/core-geth` is a different repository and is in the table above**, frozen at the
-commit the successor was created from. Its upstream is alive and has committed past that commit;
-that continuation is deliberately unreachable here, and completing it would erase the boundary the
-entry exists to record.
+commit the successor was created from. It holds the era the ETC Cooperative funded — from January
+2022 until that organization moved to maintenance mode at the end of 2024 — and `PROVENANCE.md`
+cites the Cooperative's own published record for both ends of it. Its upstream is alive and has
+committed past that commit; that continuation is deliberately unreachable here, and completing it
+would erase the boundary the entry exists to record.
 
 `PROVENANCE.md` records refs, dates, and known defects. Read it before using any of this.
 
