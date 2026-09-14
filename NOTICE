@@ -400,6 +400,29 @@ etclabscore/core-geth
               throughout the vendored tree (grant language and holders)
 
 --------------------------------------------------------------------------------
+Go modules the production client builds against, added 2026-09-13 (full
+vendors, whole repository with history)
+--------------------------------------------------------------------------------
+
+etclabscore/go-openrpc-reflect
+  License:    Apache-2.0. LICENSE.md is the unmodified license text,
+              byte-identical to etclabscore/expedition/LICENSE.md above.
+  Copyright:  not stated in the license file
+  Read from:  etclabscore/go-openrpc-reflect/LICENSE.md
+
+etclabscore/go-jsonschema-walk
+  License:    Apache-2.0 at the vendored ref, the same unmodified text. The
+              module version the production client pins, v0.0.6, predates
+              it: LICENSE.md arrived in the last of the four commits after
+              that tag. The tree at v0.0.6 is go.mod, go.sum, walk.go and
+              walk_test.go, and none of them states a license or a copyright.
+              Recorded as a fact about what upstream published; no license is
+              assumed or implied on this project's behalf for that version.
+  Copyright:  not stated by upstream
+  Read from:  etclabscore/go-jsonschema-walk/LICENSE.md, and the whole tree at
+              v0.0.6 for the absence
+
+--------------------------------------------------------------------------------
 Extractions (a subset of files, not the whole repository -- no root
 LICENSE/COPYING file exists inside these three trees, so the license below is
 read from the same upstream's own license file, at or near the extraction's
