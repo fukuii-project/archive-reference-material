@@ -423,6 +423,18 @@ etclabscore/go-jsonschema-walk
               v0.0.6 for the absence
 
 --------------------------------------------------------------------------------
+The WMI fork the production client compiles into Windows builds, added
+2026-09-13 (full vendor, whole repository with history)
+--------------------------------------------------------------------------------
+
+yusufpapurcu/wmi
+  License:    MIT, at the vendored ref, which is also the pinned version
+              v1.2.4. LICENSE is byte-identical to the LICENSE of the archived
+              original it was forked from, github.com/StackExchange/wmi.
+  Copyright:  Copyright (c) 2013 Stack Exchange
+  Read from:  yusufpapurcu/wmi/LICENSE
+
+--------------------------------------------------------------------------------
 Extractions (a subset of files, not the whole repository -- no root
 LICENSE/COPYING file exists inside these three trees, so the license below is
 read from the same upstream's own license file, at or near the extraction's
